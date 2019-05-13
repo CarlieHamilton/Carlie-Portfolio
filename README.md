@@ -1,7 +1,7 @@
 # Carlie Hamilton's Portfolio
 
-- A link (URL) to your published portfolio website
-- A link to your GitHub repository (Ensure the repository (repo) is accessible by your Educators)
+- Deployed Website - [carliehamilton.netlify.com](https://carliehamilton.netlify.com/)
+- [Github Profile](https://github.com/BlueCodeThree/Carlie-Portfolio)
 
 ## ℹ️ About This Website
 
@@ -22,6 +22,10 @@ My initial ideas for the website were:
 - [Parallax image](https://alligator.io/css/pure-css-parallax/) at the top of the site (below navigation)
 - Navy blue background, with hot pink highlights/accents on the page.
 - The overall website having a professional feel but also unique and stand out with the colour pallet.
+
+#### Mood Board
+
+![CarlieHamilton.com Moodboard](/docs/moodboard.png)
 
 I chose navy blue because it is my favourite colour and hot pink because that is the colour of my jumper. I like to stand out in photos with my bright hot pink jumper, it has become a bit of a signature colour for me.
 
