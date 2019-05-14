@@ -46,11 +46,18 @@ I wanted sans serif fonts for easy readability on the screen. I wanted a mono sp
 
 ### Wireframes
 
+(Click to enlarge)
+
 ![wireframes](/docs/wireframe.jpeg)
 
 In my wireframes I have created a layout for mobile as well as a larger version for desktop and tablet. I have an almost one page design with a separate page to expand on my portfolio items.
 
-### Personal logo (optional)
+### Logo
+
+I wanted a simple logo/image to put on the website that would represent being a developer, and allow the page to have a common element that I could also use as a favicon. I found this by [freepik on flaticon.com:](https://www.freepik.com/?__hstc=57440181.cb32c4642b4100318fd2c153520c6b27.1557789566265.1557789566265.1557789566265.1&__hssc=57440181.1.1557789566266&__hsfp=4071572874)
+
+![icon](/docs/icon.png)
+
 ### Usability considerations
 
 ## 🔍 Planning
@@ -62,17 +69,14 @@ In my wireframes I have created a layout for mobile as well as a larger version 
 
 #### Day One - Tuesday, 14 May 2019
 
+![Trello Day 1](/docs/trello14may.png)
+
+I completed my mood board and wire frames and began working on my content and HTML.
+
 #### Day Two - Wednesday 15 May 2019
 
 
-### Trello
-I used a trello board to keep track of my tasks - to easily see where I was at and what I needed to get done.
 
-#### Day 1
-
-Initial setup.
-
-![Trello Day 1](/docs/trello14may.png)
 
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
