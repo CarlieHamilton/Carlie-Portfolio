@@ -1,6 +1,6 @@
 # Carlie Hamilton's Portfolio
 
-- Deployed Website - [carliehamilton.netlify.com](https://carliehamilton.netlify.com/)
+- Deployed Website - [carlie.netlify.com](https://carliehamilton.netlify.com/)
 - [Github Profile](https://github.com/BlueCodeThree/Carlie-Portfolio)
 
 ## ℹ️ About This Website
@@ -71,7 +71,13 @@ I wanted a simple logo/image to put on the website that would represent being a 
 
 ![Trello Day 1](/docs/trello14may.png)
 
-I completed my mood board and wire frames and began working on my content and HTML.
+I completed my mood board and wire frames and began working on my content and HTML. I have a functional hamburger menu for the moment.
+
+I am already thinking that I will be changing slightly from my wireframes for the mobile. Instead of the content inside boxes, having the content go across 100% of the screen and change the background colours of each slighty. I am undecided on the colours, if I want to do slightly different blue colours (similar colours), or have the colours contrasting.
+
+End of day trello board:
+
+![trello end of day 1](/docs/trello14mayend.png)
 
 #### Day Two - Wednesday 15 May 2019
 

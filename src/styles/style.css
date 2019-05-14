@@ -7,11 +7,76 @@
   background-attachment: fixed;
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "nav" "header" "about" "projects" "speaking" "writing" "contact" "social-media";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
   color: #FC5185;
   font-family: "Oxygen", sans-serif;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+h2 {
+  color: #FC5185;
+  font-family: "Oxygen", sans-serif;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.box {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #3FC1C9;
+  color: black;
+}
+
+#header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+#about {
+  background-color: #000080;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: about;
+}
+
+#projects {
+  background-color: #3FC1C9;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: projects;
+}
+
+#speaking {
+  background-color: #000080;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: speaking;
+}
+
+#writing {
+  background-color: #000080;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: writing;
+}
+
+#contact {
+  background-color: #000080;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: contact;
 }
 
 #nav {
@@ -20,29 +85,37 @@ h1 {
   text-align: right;
   height: 70px;
   line-height: 70px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+#nav label {
+  display: block;
+  cursor: pointer;
+  color: #FC5185;
+  margin: 0;
+  padding: 0 0.8em;
+  font-size: 2em;
 }
 
 #toggle {
   display: none;
 }
 
-label {
-  display: block;
-  cursor: pointer;
-}
-
 .menu {
   text-align: center;
   width: 100px;
   display: none;
+  list-style: none;
 }
 
 .menu a {
   display: block;
   border-bottom: 1px solid #eaeaeb;
   margin: 0px;
-  background-color: hotpink;
-  color: white;
+  background-color: #FC5185;
+  color: #F0F8FF;
 }
 
 #toggle:checked + .menu {
@@ -56,7 +129,10 @@ label {
   position: absolute;
 }
 
-#about {
+#social-media {
   background-color: #000080;
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: social-media;
 }
 /*# sourceMappingURL=style.css.map */

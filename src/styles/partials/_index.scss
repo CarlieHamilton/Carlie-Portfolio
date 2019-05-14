@@ -4,56 +4,72 @@
     background-attachment: fixed;
 
     @include content-font;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "about"
+        "projects"
+        "speaking"
+        "writing"
+        "contact"
+        "footer";
+    justify-content: center;
 }
 
 h1 {
     @include header-font;
+    @include space;
+}
+
+h2 {
+    @include header-font;
+    @include space;
+}
+
+.box {
+    @include space(1em);
+    background-color: $box-color;
+    color: $dark-font-color;
 }
 
 
 // Sections
 
-// NAV MENU
-#nav {
-    background-color: $main-bg-color;
-    border-bottom: 1px solid #eaeaea;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-}
-
-#toggle {
-    display: none;
-}
-
-label {
-    display: block;
-    cursor: pointer;
-}
-.menu {
-    text-align: center;
-    width: 100px;
-    display: none;
-    a {
-    display: block;
-    border-bottom: 1px solid #eaeaeb;
-    margin: 0px;
-    background-color: hotpink;
-    color: white;
-}
-}
-#toggle:checked + .menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-}
-
 
 // HEADER
 #header {
+    grid-area: header;
 }
 
+// ABOUT
 #about {
     background-color: $main-bg-color;
+    grid-area: about;
 }
 
+// PROJECTS
+#projects {
+    background-color: $box-color;
+    grid-area: projects;
+}
+
+// SPEAKING
+#speaking {
+    background-color: $main-bg-color;
+    grid-area: speaking;
+}
+
+// WRITING
+#writing {
+    background-color: $main-bg-color;
+    grid-area: writing;
+}
+
+// CONTACT
+#contact {
+    background-color: $main-bg-color;
+    grid-area: contact;
+}

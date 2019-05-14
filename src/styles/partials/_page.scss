@@ -1,0 +1,45 @@
+// NAV MENU
+#nav {
+    background-color: $main-bg-color;
+    border-bottom: 1px solid #eaeaea;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    grid-area: nav;
+    label {
+        display: block;
+        cursor: pointer;
+        color: $hot-pink;
+        @include space(0, 0 0.8em);
+        font-size: 2em;
+    }
+}
+
+#toggle {
+    display: none;
+}
+
+
+.menu {
+    text-align: center;
+    width: 100px;
+    display: none;
+    list-style: none;
+    a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0px;
+    background-color: $hot-pink;
+    color: $main-font-color;
+}
+}
+#toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+#footer {
+    background-color: $main-bg-color;
+    grid-area: footer;
+}
