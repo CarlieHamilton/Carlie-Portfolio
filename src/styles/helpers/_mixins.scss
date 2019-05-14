@@ -1,0 +1,14 @@
+@mixin content-font($color: $main-font-color, $family: $main-font) {
+    color: $color;
+    font-family: $family;
+}
+
+@mixin header-font($color: $hot-pink, $family: $heading-font) {
+    color: $color;
+    font-family: $family;
+}
+
+@mixin space ($margin: 0.5em, $padding: 0.5em) {
+    margin: $margin;
+    padding: $padding;
+}

@@ -1,0 +1,62 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+#container {
+  background-image: url(/images/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #FC5185;
+  font-family: "Oxygen", sans-serif;
+}
+
+#nav {
+  background-color: #000080;
+  border-bottom: 1px solid #eaeaea;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+#toggle {
+  display: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.menu {
+  text-align: center;
+  width: 100px;
+  display: none;
+}
+
+.menu a {
+  display: block;
+  border-bottom: 1px solid #eaeaeb;
+  margin: 0px;
+  background-color: hotpink;
+  color: white;
+}
+
+#toggle:checked + .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+#about {
+  background-color: #000080;
+}
+/*# sourceMappingURL=style.css.map */

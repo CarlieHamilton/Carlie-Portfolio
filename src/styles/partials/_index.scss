@@ -1,11 +1,59 @@
 #container {
-    background-image: url(/images/bg.png);
+    background-image: url(/images/bg.jpg);
     background-repeat: repeat;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;    background-image: url('images/codebg.png');
-    // background-size: cover;
-    // background-attachment: fixed;
+    background-attachment: fixed;
+
+    @include content-font;
+}
+
+h1 {
+    @include header-font;
+}
+
+
+// Sections
+
+// NAV MENU
+#nav {
+    background-color: $main-bg-color;
+    border-bottom: 1px solid #eaeaea;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+.menu {
+    text-align: center;
+    width: 100px;
+    display: none;
+    a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0px;
+    background-color: hotpink;
+    color: white;
+}
+}
+#toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+// HEADER
+#header {
+}
+
+#about {
+    background-color: $main-bg-color;
 }
 
