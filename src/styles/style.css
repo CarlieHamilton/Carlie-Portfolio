@@ -1,17 +1,81 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen");
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+#header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+  position: relative;
+  top: 70px;
+  height: 50vh;
+  text-align: center;
+  padding: 50% 0;
+}
+
+#about {
+  background-color: #000080;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: about;
+  position: relative;
+  top: 70px;
+}
+
+#about .box {
+  background-color: #000080;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+#projects {
+  background-color: #3FC1C9;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: projects;
+  position: relative;
+  top: 70px;
+}
+
+#speaking {
+  background-color: #000080;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: speaking;
+  position: relative;
+  top: 70px;
+}
+
+#writing {
+  background-color: #000080;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: writing;
+  position: relative;
+  top: 70px;
+}
+
+#contact {
+  background-color: #000080;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  position: relative;
+  top: 70px;
+}
+
 #container {
   background-image: url(/images/bg.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "nav" "header" "about" "projects" "speaking" "writing" "contact" "social-media";
+      grid-template-areas: "nav" "header" "about" "projects" "speaking" "writing" "contact" "footer";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -31,6 +95,10 @@ h2 {
   padding: 0.5em;
 }
 
+img {
+  max-width: 100%;
+}
+
 .box {
   margin: 1em;
   padding: 0.5em;
@@ -38,56 +106,20 @@ h2 {
   color: black;
 }
 
-#header {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-#about {
-  background-color: #000080;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: about;
-}
-
-#projects {
-  background-color: #3FC1C9;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: projects;
-}
-
-#speaking {
-  background-color: #000080;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: speaking;
-}
-
-#writing {
-  background-color: #000080;
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: writing;
-}
-
-#contact {
-  background-color: #000080;
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: contact;
+.wrapper {
+  display: inline-block;
 }
 
 #nav {
-  background-color: #000080;
-  border-bottom: 1px solid #eaeaea;
   text-align: right;
   height: 70px;
   line-height: 70px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 #nav label {
@@ -99,26 +131,29 @@ h2 {
   font-size: 2em;
 }
 
-#toggle {
+#nav #toggle {
   display: none;
 }
 
-.menu {
+#nav .menu {
   text-align: center;
   width: 100px;
   display: none;
   list-style: none;
 }
 
-.menu a {
+#nav .menu a {
   display: block;
-  border-bottom: 1px solid #eaeaeb;
+  border-bottom: 1px solid #F0F8FF;
   margin: 0px;
   background-color: #FC5185;
   color: #F0F8FF;
 }
 
-#toggle:checked + .menu {
+#nav #toggle:checked + .menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,10 +164,14 @@ h2 {
   position: absolute;
 }
 
-#social-media {
+#nav .menu:focus {
+  display: none;
+}
+
+#footer {
   background-color: #000080;
   -ms-grid-row: 8;
   -ms-grid-column: 1;
-  grid-area: social-media;
+  grid-area: footer;
 }
 /*# sourceMappingURL=style.css.map */

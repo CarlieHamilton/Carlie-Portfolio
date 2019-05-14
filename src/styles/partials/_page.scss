@@ -1,11 +1,60 @@
+#container {
+    background-image: url(/images/bg.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    @include content-font;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "about"
+        "projects"
+        "speaking"
+        "writing"
+        "contact"
+        "footer";
+    justify-content: center;
+}
+
+h1 {
+    @include header-font;
+    @include space;
+}
+
+h2 {
+    @include header-font;
+    @include space;
+}
+
+img {
+    max-width: 100%;
+}
+
+.box {
+    @include space(1em);
+    background-color: $box-color;
+    color: $dark-font-color;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
 // NAV MENU
 #nav {
-    background-color: $main-bg-color;
-    border-bottom: 1px solid #eaeaea;
+    // background-color: $main-bg-color;
+    // border-bottom: 1px solid $hot-pink;
     text-align: right;
     height: 70px;
     line-height: 70px;
     grid-area: nav;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
     label {
         display: block;
         cursor: pointer;
@@ -13,32 +62,42 @@
         @include space(0, 0 0.8em);
         font-size: 2em;
     }
+
+    #toggle {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100px;
+        display: none;
+        list-style: none;
+        a {
+        display: block;
+        border-bottom: 1px solid $main-font-color;
+        margin: 0px;
+        background-color: $hot-pink;
+        color: $main-font-color;
+        // transform: scale(1, 0);
+        // transition: transform 400ms ease-in-out;
+        }
+    }
+
+    #toggle:checked + .menu {
+        width: 100%;
+        @include space (0, 0);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+    }
+    .menu:focus {
+        display: none;
+    }
 }
 
-#toggle {
-    display: none;
-}
 
-
-.menu {
-    text-align: center;
-    width: 100px;
-    display: none;
-    list-style: none;
-    a {
-    display: block;
-    border-bottom: 1px solid #eaeaeb;
-    margin: 0px;
-    background-color: $hot-pink;
-    color: $main-font-color;
-}
-}
-#toggle:checked + .menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-}
-
+// FOOTER
 #footer {
     background-color: $main-bg-color;
     grid-area: footer;

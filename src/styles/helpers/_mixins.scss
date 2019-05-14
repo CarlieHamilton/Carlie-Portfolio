@@ -1,6 +1,7 @@
 @mixin content-font($color: $main-font-color, $family: $main-font) {
     color: $color;
     font-family: $family;
+    line-height: 1.5em;
 }
 
 @mixin header-font($color: $hot-pink, $family: $heading-font) {
@@ -11,4 +12,9 @@
 @mixin space ($margin: 0.5em, $padding: 0.5em) {
     margin: $margin;
     padding: $padding;
+}
+
+@mixin main-positioning {
+    position: relative;
+    top: 70px;
 }

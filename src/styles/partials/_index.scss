@@ -1,39 +1,4 @@
-#container {
-    background-image: url(/images/bg.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
 
-    @include content-font;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "nav"
-        "header"
-        "about"
-        "projects"
-        "speaking"
-        "writing"
-        "contact"
-        "footer";
-    justify-content: center;
-}
-
-h1 {
-    @include header-font;
-    @include space;
-}
-
-h2 {
-    @include header-font;
-    @include space;
-}
-
-.box {
-    @include space(1em);
-    background-color: $box-color;
-    color: $dark-font-color;
-}
 
 
 // Sections
@@ -42,34 +7,47 @@ h2 {
 // HEADER
 #header {
     grid-area: header;
+    @include main-positioning;
+    height: 50vh;
+    text-align: center;
+    padding: 50% 0;
 }
 
 // ABOUT
 #about {
     background-color: $main-bg-color;
     grid-area: about;
+    @include main-positioning;
+    .box {
+        background-color: $main-bg-color;
+        @include content-font;
+    }
 }
 
 // PROJECTS
 #projects {
     background-color: $box-color;
     grid-area: projects;
+    @include main-positioning;
 }
 
 // SPEAKING
 #speaking {
     background-color: $main-bg-color;
     grid-area: speaking;
+    @include main-positioning;
 }
 
 // WRITING
 #writing {
     background-color: $main-bg-color;
     grid-area: writing;
+    @include main-positioning;
 }
 
 // CONTACT
 #contact {
     background-color: $main-bg-color;
     grid-area: contact;
+    @include main-positioning;
 }
