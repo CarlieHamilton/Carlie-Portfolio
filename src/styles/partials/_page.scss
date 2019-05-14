@@ -1,7 +1,14 @@
 #container {
-    background-image: url(/images/bg.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
+    // background-image: url(/images/bg.jpg);
+    // background-repeat: repeat;
+    // background-attachment: fixed;
+
+    // gradient background - from https://www.colorzilla.com/gradient-editor/
+    background: #000080;
+background: -moz-linear-gradient(45deg,  #000080 0%, #0075d6 62%, #000080 100%);
+background: -webkit-linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
+background: linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
 
     @include content-font;
 
@@ -45,11 +52,9 @@ img {
 
 // NAV MENU
 #nav {
-    // background-color: $main-bg-color;
-    // border-bottom: 1px solid $hot-pink;
     text-align: right;
-    height: 70px;
-    line-height: 70px;
+    height: 50px;
+    line-height: 60px;
     grid-area: nav;
     position: fixed;
     width: 100%;
@@ -99,6 +104,7 @@ img {
 
 // FOOTER
 #footer {
-    background-color: $main-bg-color;
+    // background-color: $main-bg-color;
     grid-area: footer;
+    @include main-positioning;
 }

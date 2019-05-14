@@ -6,7 +6,7 @@
   -ms-grid-column: 1;
   grid-area: header;
   position: relative;
-  top: 70px;
+  top: 0px;
   height: 50vh;
   text-align: center;
   padding: 50% 0;
@@ -18,7 +18,7 @@
   -ms-grid-column: 1;
   grid-area: about;
   position: relative;
-  top: 70px;
+  top: 0px;
 }
 
 #about .box {
@@ -34,7 +34,7 @@
   -ms-grid-column: 1;
   grid-area: projects;
   position: relative;
-  top: 70px;
+  top: 0px;
 }
 
 #speaking {
@@ -43,31 +43,44 @@
   -ms-grid-column: 1;
   grid-area: speaking;
   position: relative;
-  top: 70px;
+  top: 0px;
+}
+
+#speaking .box {
+  background-color: #000080;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
 }
 
 #writing {
-  background-color: #000080;
+  background-color: #3FC1C9;
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: writing;
   position: relative;
-  top: 70px;
+  top: 0px;
 }
 
 #contact {
-  background-color: #000080;
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: contact;
   position: relative;
-  top: 70px;
+  top: 0px;
+}
+
+#contact .box {
+  background-color: transparent;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
 }
 
 #container {
-  background-image: url(/images/bg.jpg);
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: #000080;
+  background: linear-gradient(45deg, #000080 0%, #0075d6 62%, #000080 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
@@ -112,8 +125,8 @@ img {
 
 #nav {
   text-align: right;
-  height: 70px;
-  line-height: 70px;
+  height: 50px;
+  line-height: 60px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav;
@@ -169,9 +182,10 @@ img {
 }
 
 #footer {
-  background-color: #000080;
   -ms-grid-row: 8;
   -ms-grid-column: 1;
   grid-area: footer;
+  position: relative;
+  top: 0px;
 }
 /*# sourceMappingURL=style.css.map */

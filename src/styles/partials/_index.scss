@@ -36,18 +36,26 @@
     background-color: $main-bg-color;
     grid-area: speaking;
     @include main-positioning;
+    .box {
+        background-color: $main-bg-color;
+        @include content-font;
+    }
 }
 
 // WRITING
 #writing {
-    background-color: $main-bg-color;
+    background-color: $box-color;
     grid-area: writing;
     @include main-positioning;
 }
 
 // CONTACT
 #contact {
-    background-color: $main-bg-color;
+    // background-color: $main-bg-color;
     grid-area: contact;
     @include main-positioning;
+    .box {
+        background-color: transparent;
+        @include content-font;
+    }
 }
