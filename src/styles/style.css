@@ -32,6 +32,13 @@ h2 {
   padding: 0.5em;
 }
 
+@media screen and (min-width: 768px) {
+  h2 {
+    margin: 70px 0.5em 0.5em;
+    padding: 0.5em;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -81,10 +88,25 @@ ul {
   padding: 0.5em;
   background-color: #3FC1C9;
   color: black;
+  border-radius: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    margin: 1.5em 3em;
+    padding: 0.5em;
+  }
 }
 
 .wrapper {
   display: inline-block;
+  padding: 50% 0;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 25% 0;
+  }
 }
 
 #nav {
@@ -265,9 +287,9 @@ small {
   grid-area: header;
   position: relative;
   top: 0px;
-  height: 50vh;
+  height: 100vh;
   text-align: center;
-  padding: 50% 0;
+  padding: 0;
 }
 
 #header i {
@@ -313,6 +335,37 @@ small {
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #about .box {
+    background-color: #3FC1C9;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.img-wrapper {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .img-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 1.5em 3em;
+    padding: 0.5em;
+  }
 }
 
 .techstack {

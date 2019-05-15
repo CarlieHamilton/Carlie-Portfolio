@@ -34,6 +34,10 @@ h1 {
 h2 {
     @include header-font;
     @include space;
+
+    @include big-screen {
+        @include space(70px 0.5em 0.5em);
+    }
 }
 
 img {
@@ -71,10 +75,18 @@ ul {
     @include space(1em);
     background-color: $box-color;
     color: $dark-font-color;
+    border-radius: 2em;
+    @include big-screen {
+        @include space (1.5em 3em)
+    }
 }
 
 .wrapper {
     display: inline-block;
+    padding: 50% 0;
+    @include big-screen {
+        padding: 25% 0;
+    }
 }
 
 // .parallax-section {

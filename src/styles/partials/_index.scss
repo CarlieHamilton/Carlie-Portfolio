@@ -8,13 +8,14 @@
 #header {
     grid-area: header;
     @include main-positioning;
-    height: 50vh;
+    height: 100vh;
     text-align: center;
-    padding: 50% 0;
+    padding: 0;
     i {
         font-size: 1em;
     }
 }
+
 
 // BUTTON
 #about-button {
@@ -45,6 +46,25 @@
     .box {
         background-color: $main-bg-color;
         @include content-font;
+        @include big-screen {
+            background-color: $box-color;
+            color: $dark-font-color;
+        }
+    }
+}
+
+#about-flex {
+    @include big-screen {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.img-wrapper {
+    @include space;
+    @include big-screen {
+        order: 2;
+        @include space (1.5em 3em)
     }
 }
 
