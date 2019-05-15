@@ -36,7 +36,7 @@ h2 {
     @include space;
 
     @include big-screen {
-        @include space(70px 0.5em 0.5em);
+        @include space(70px 8em 0.5em);
     }
 }
 
@@ -64,7 +64,7 @@ input, textarea {
 }
 
 i {
-    font-size: 3.5em;
+    font-size: 1em;
 }
 
 ul {
@@ -77,7 +77,7 @@ ul {
     color: $dark-font-color;
     border-radius: 2em;
     @include big-screen {
-        @include space (1.5em 3em)
+        @include space (0em 3em, 3em)
     }
 }
 
@@ -86,6 +86,19 @@ ul {
     padding: 50% 0;
     @include big-screen {
         padding: 25% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+#flex {
+    @include big-screen {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 }
 
@@ -232,7 +245,18 @@ small {
 
 .images {
     @include space(0, 0);
-    // display: block;
     border-radius: 2em;
     max-width: auto;
+}
+
+.image-wrapper-full {
+    @include space(0, 0);
+    @include big-screen {
+        @include space(0 3em 3em, 0)
+        order: 2;
+        img {
+            border-radius: 3em;
+            max-width: 700px;
+        }
+    }
 }

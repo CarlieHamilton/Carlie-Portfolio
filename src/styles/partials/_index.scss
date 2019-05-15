@@ -20,10 +20,10 @@
 // BUTTON
 #about-button {
     @include content-font($box-color);
-    display: block;
+    display: inline-block;
     border: 1px solid $box-color;
     @include space;
-    max-width: auto;
+    width: 200px;
     a {
         color: $box-color;
         text-decoration: none;
@@ -47,24 +47,18 @@
         background-color: $main-bg-color;
         @include content-font;
         @include big-screen {
-            background-color: $box-color;
-            color: $dark-font-color;
+            @include big-screen-box;
         }
     }
 }
 
-#about-flex {
-    @include big-screen {
-        display: flex;
-        width: 100%;
-    }
-}
+
 
 .img-wrapper {
     @include space;
     @include big-screen {
         order: 2;
-        @include space (1.5em 3em)
+        @include space (0 3em 3em, 0)
     }
 }
 
@@ -97,6 +91,9 @@
     .box {
         background-color: $main-bg-color;
         @include content-font;
+                @include big-screen {
+            @include big-screen-box;
+        }
     }
 
     // for parallax
