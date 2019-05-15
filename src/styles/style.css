@@ -163,7 +163,7 @@ ul {
     margin: 0;
     padding: 0em;
     position: relative;
-    left: 100px;
+    left: 10px;
     width: 100%;
   }
 }
@@ -196,7 +196,6 @@ ul {
   }
   #nav #menu-logo i {
     font-size: 1em;
-    color: #000080;
   }
 }
 

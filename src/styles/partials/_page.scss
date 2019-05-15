@@ -165,7 +165,7 @@ ul {
             width: auto;
             @include space (0, 0em);
             position: relative;
-            left: 100px;
+            left: 10px;
             width: 100%;
         }
     }
@@ -188,7 +188,6 @@ ul {
             display: inline-block;
             i {
                 font-size: 1em;
-                color: $main-bg-color;
             }
         }
     }
