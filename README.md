@@ -81,8 +81,9 @@ End of day trello board:
 
 #### Day Two - Wednesday 15 May 2019
 
+On day two I finished the most of the mobile layout, added a css animation to my main button, and made the main navigation work in desktop/tablet mode. 
 
-
+![trello end of day 2](/docs/trello15may.png)
 
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
