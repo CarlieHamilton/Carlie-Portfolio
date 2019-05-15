@@ -18,6 +18,8 @@
     @include content-font($box-color);
     display: block;
     border: 1px solid $box-color;
+    @include space;
+    max-width: auto;
     a {
         color: $box-color;
         text-decoration: none;

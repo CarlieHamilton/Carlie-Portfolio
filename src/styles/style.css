@@ -246,6 +246,9 @@ small {
   line-height: 1.5em;
   display: block;
   border: 1px solid #3FC1C9;
+  margin: 0.5em;
+  padding: 0.5em;
+  max-width: auto;
 }
 
 #about-button a {
