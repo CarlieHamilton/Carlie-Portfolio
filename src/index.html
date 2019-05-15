@@ -88,11 +88,8 @@
                 <h2>Speaking</h2>
 
                 <div class="box">
-                    <h3>Coder Academy CA Callback</h3>
+                    <h3>3 May 2019 - Coder Academy CA Callback</h3>
                     <ul>
-                        <li>
-                            3 May 2019
-                        </li>
                         <li>
                             'Become a Vim Wizard with Vim and VS Code
                         </li>
@@ -108,13 +105,25 @@
                 <div class="box">
                     <p>Writing stuff here</p>
                 </div>
-                <img src="images/bgu.jpg" alt="Carlie Hamilton CHANGE THIS">
+
             </section>
 
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="box">
-                    Form here
+                    <!-- Thanks to https://mailthis.to/ for the form/sending email functionality -->
+                    <form action="https://mailthis.to/carliemhamilton@gmail.com"
+                    method="POST" encType="multipart/form-data" id="email-form">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="_replyto" placeholder="Your email">
+                    <textarea name="message" placeholder="Enter your message here"></textarea>
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input type="hidden" name="_after" value="https://carlie.netlify.com/index.html#contact">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="Email sent, thank you!">
+                    <input type="submit" value="Send">
+                </form>
+
                 </div>
             </section>
 
@@ -126,7 +135,7 @@
                     <li><a href="https://dev.to/bluecodethree"><i class="fab fa-dev"></i></li>
                     <li><a href="https://www.linkedin.com/in/carlie-hamilton-14771267/"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
-                <section id="to-top"
+                <section id="to-top">
                     Image or something to go back to the top.
                 </section>
                <small>&copy; Carlie Hamilton</small>

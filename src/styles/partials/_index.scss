@@ -86,9 +86,16 @@
 
 // WRITING
 #writing {
-    background-color: $box-color;
+    background-color: $secondary-bg-color;
     grid-area: writing;
     @include main-positioning;
+    .box {
+        background-color: $secondary-bg-color;
+        @include content-font;
+    }
+    h2 {
+        color: $light-hot-pink;
+    }
 }
 
 // CONTACT
@@ -99,5 +106,14 @@
     .box {
         background-color: transparent;
         @include content-font;
+    }
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    textarea {
+        height: 100px;
     }
 }

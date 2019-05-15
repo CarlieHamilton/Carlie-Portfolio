@@ -36,8 +36,44 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #FC5185;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3FC1C9;
+}
+
+input, textarea {
+  background-color: #000080;
+  color: #F0F8FF;
+  border: #3FC1C9 1px solid;
+  margin: 0.5em;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #F0F8FF;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #F0F8FF;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #F0F8FF;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #F0F8FF;
+}
+
 i {
-  font-size: 4em;
+  font-size: 3.5em;
+}
+
+ul {
+  list-style: none;
 }
 
 .box {
@@ -161,7 +197,7 @@ i {
 }
 
 .social-media li {
-  margin-right: 30px;
+  margin-right: 20px;
   line-height: 4em;
 }
 
@@ -175,6 +211,15 @@ i {
 
 .social-media a:hover {
   color: #FC5185;
+}
+
+small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .images {
@@ -253,7 +298,7 @@ i {
 }
 
 .techstack li {
-  margin-right: 30px;
+  margin-right: 20px;
   line-height: 4em;
 }
 
@@ -309,12 +354,23 @@ i {
 }
 
 #writing {
-  background-color: #3FC1C9;
+  background-color: #0075d6;
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: writing;
   position: relative;
   top: 0px;
+}
+
+#writing .box {
+  background-color: #0075d6;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+#writing h2 {
+  color: #FF69B4;
 }
 
 #contact {
@@ -330,5 +386,22 @@ i {
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
+}
+
+#email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#email-form textarea {
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

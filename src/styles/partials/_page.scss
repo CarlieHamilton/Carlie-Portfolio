@@ -41,11 +41,30 @@ img {
 }
 
 a {
+    color: $hot-pink;
+    text-decoration: none;
+    &:hover {
+        color: $box-color;
+        // background-color: $main-font-color;
+    }
+}
 
+input, textarea {
+    background-color: $main-bg-color;
+    color: $main-font-color;
+    border: $box-color 1px solid;
+    margin: 0.5em;
+    &::placeholder {
+        color: $main-font-color;
+    }
 }
 
 i {
-    font-size: 4em;
+    font-size: 3.5em;
+}
+
+ul {
+    list-style: none;
 }
 
 .box {
@@ -151,6 +170,11 @@ i {
             color: $hot-pink;
         }
     }
+}
+
+small {
+    display: flex;
+    justify-content: center;
 }
 
 // ITEMS
