@@ -44,23 +44,8 @@
 }
 
 .techstack {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    @include space;
-    li {
-        margin-right: 30px;
-        line-height: 4em;
-    }
-    li:hover {
-        color: $hot-pink;
-    }
-    i {
-    font-size: 4em;
-}
+    @include icons;
+
 }
 
 // PROJECTS
@@ -88,6 +73,15 @@
         background-color: $main-bg-color;
         @include content-font;
     }
+
+    // for parallax
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.speaking-img::after {
+    background-image: url(/images/carliepresentation.jpg);
 }
 
 // WRITING

@@ -1,6 +1,189 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen");
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+#container {
+  background: #000080;
+  background: linear-gradient(45deg, #000080 0%, #0075d6 62%, #000080 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "nav" "header" "about" "projects" "speaking" "writing" "contact" "footer";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: #FC5185;
+  font-family: "Oxygen", sans-serif;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+h2 {
+  color: #FC5185;
+  font-family: "Oxygen", sans-serif;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  font-size: 4em;
+}
+
+.box {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #3FC1C9;
+  color: black;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.parallax-section {
+  position: relative;
+  height: 20vh;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  -webkit-transform: translateZ(-1px) scale(1.5);
+          transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+#nav {
+  text-align: right;
+  height: 50px;
+  line-height: 60px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#nav label {
+  display: block;
+  cursor: pointer;
+  color: #FC5185;
+  margin: 0;
+  padding: 0 0.8em;
+  font-size: 2em;
+}
+
+#nav #toggle {
+  display: none;
+}
+
+#nav .menu {
+  text-align: center;
+  width: 100px;
+  display: none;
+  list-style: none;
+}
+
+#nav .menu a {
+  display: block;
+  border-bottom: 1px solid #F0F8FF;
+  margin: 0px;
+  background-color: #FC5185;
+  color: #F0F8FF;
+}
+
+#nav #toggle:checked + .menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+#nav .menu:focus {
+  display: none;
+}
+
+#footer {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  position: relative;
+  top: 0px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.social-media li {
+  margin-right: 30px;
+  line-height: 4em;
+}
+
+.social-media li:hover {
+  color: #FC5185;
+}
+
+.social-media a {
+  color: #F0F8FF;
+}
+
+.social-media a:hover {
+  color: #FC5185;
+}
+
+.images {
+  margin: 0;
+  padding: 0;
+  border-radius: 2em;
+  max-width: auto;
+}
+
 #header {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -78,10 +261,6 @@
   color: #FC5185;
 }
 
-.techstack i {
-  font-size: 4em;
-}
-
 #projects {
   background-color: #0075d6;
   -ms-grid-row: 4;
@@ -112,6 +291,10 @@
   grid-area: speaking;
   position: relative;
   top: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 2px;
+          perspective: 2px;
 }
 
 #speaking .box {
@@ -119,6 +302,10 @@
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
+}
+
+.speaking-img::after {
+  background-image: url(/images/carliepresentation.jpg);
 }
 
 #writing {
@@ -143,124 +330,5 @@
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
-}
-
-#container {
-  background: #000080;
-  background: linear-gradient(45deg, #000080 0%, #0075d6 62%, #000080 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "nav" "header" "about" "projects" "speaking" "writing" "contact" "footer";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-h1 {
-  color: #FC5185;
-  font-family: "Oxygen", sans-serif;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-h2 {
-  color: #FC5185;
-  font-family: "Oxygen", sans-serif;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-img {
-  max-width: 100%;
-}
-
-.box {
-  margin: 1em;
-  padding: 0.5em;
-  background-color: #3FC1C9;
-  color: black;
-}
-
-.wrapper {
-  display: inline-block;
-}
-
-#nav {
-  text-align: right;
-  height: 50px;
-  line-height: 60px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: nav;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-#nav label {
-  display: block;
-  cursor: pointer;
-  color: #FC5185;
-  margin: 0;
-  padding: 0 0.8em;
-  font-size: 2em;
-}
-
-#nav #toggle {
-  display: none;
-}
-
-#nav .menu {
-  text-align: center;
-  width: 100px;
-  display: none;
-  list-style: none;
-}
-
-#nav .menu a {
-  display: block;
-  border-bottom: 1px solid #F0F8FF;
-  margin: 0px;
-  background-color: #FC5185;
-  color: #F0F8FF;
-}
-
-#nav #toggle:checked + .menu {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-}
-
-#nav .menu:focus {
-  display: none;
-}
-
-#footer {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  position: relative;
-  top: 0px;
-}
-
-.images {
-  margin: 0;
-  padding: 0;
-  border-radius: 2em;
-  max-width: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -44,6 +44,10 @@ a {
 
 }
 
+i {
+    font-size: 4em;
+}
+
 .box {
     @include space(1em);
     background-color: $box-color;
@@ -52,6 +56,30 @@ a {
 
 .wrapper {
     display: inline-block;
+}
+
+.parallax-section {
+    position: relative;
+    height: 20vh;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
 }
 
 
@@ -113,6 +141,16 @@ a {
     // background-color: $main-bg-color;
     grid-area: footer;
     @include main-positioning;
+}
+
+.social-media {
+    @include icons;
+    a {
+        color: $main-font-color;
+        &:hover {
+            color: $hot-pink;
+        }
+    }
 }
 
 // ITEMS

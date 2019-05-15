@@ -18,3 +18,20 @@
     position: relative;
     top: 0px;
 }
+
+@mixin icons {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    @include space;
+    li {
+        margin-right: 30px;
+        line-height: 4em;
+    }
+    li:hover {
+        color: $hot-pink;
+    }
+}
