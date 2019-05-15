@@ -87,30 +87,6 @@ ul {
   display: inline-block;
 }
 
-.parallax-section {
-  position: relative;
-  height: 20vh;
-}
-
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  -webkit-transform: translateZ(-1px) scale(1.5);
-          transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-}
-
 #nav {
   text-align: right;
   height: 50px;
@@ -123,6 +99,14 @@ ul {
   z-index: 1;
 }
 
+@media screen and (min-width: 768px) {
+  #nav {
+    border-bottom: 1px solid #F0F8FF;
+    background-color: #FC5185;
+    height: auto;
+  }
+}
+
 #nav label {
   display: block;
   cursor: pointer;
@@ -130,6 +114,12 @@ ul {
   margin: 0;
   padding: 0 0.8em;
   font-size: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  #nav label {
+    display: none;
+  }
 }
 
 #nav #toggle {
@@ -149,6 +139,34 @@ ul {
   margin: 0px;
   background-color: #FC5185;
   color: #F0F8FF;
+}
+
+@media screen and (min-width: 768px) {
+  #nav .menu a {
+    border: none;
+    margin: 0;
+    padding: 0 2em;
+  }
+  #nav .menu a:hover {
+    background-color: #3FC1C9;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: auto;
+    margin: 0;
+    padding: 0em;
+    position: relative;
+    left: 100px;
+    width: 100%;
+  }
 }
 
 #nav #toggle:checked + .menu {

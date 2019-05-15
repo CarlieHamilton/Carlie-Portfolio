@@ -77,29 +77,29 @@ ul {
     display: inline-block;
 }
 
-.parallax-section {
-    position: relative;
-    height: 20vh;
-}
+// .parallax-section {
+//     position: relative;
+//     height: 20vh;
+// }
 
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+// .parallax::after {
+//   /* Display and position the pseudo-element */
+//   content: " ";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
 
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-}
+//   /* Move the pseudo-element back away from the camera,
+//    * then scale it back up to fill the viewport.
+//    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+//   transform: translateZ(-1px) scale(1.5);
+//   /* Force the background image to fill the whole element. */
+//   background-size: 100%;
+//   /* Keep the image from overlapping sibling elements. */
+//   z-index: -1;
+// }
 
 
 
@@ -113,12 +113,21 @@ ul {
     width: 100%;
     z-index: 1;
 
+    @include big-screen {
+        border-bottom: 1px solid $main-font-color;
+        background-color: $hot-pink;
+        height: auto;
+    }
+
     label {
         display: block;
         cursor: pointer;
         color: $hot-pink;
         @include space(0, 0 0.8em);
         font-size: 2em;
+        @include big-screen {
+            display: none;
+        }
     }
 
     #toggle {
@@ -138,6 +147,26 @@ ul {
         color: $main-font-color;
         // transform: scale(1, 0);
         // transition: transform 400ms ease-in-out;
+
+        @include big-screen {
+            border: none;
+            @include space(0, 0 2em)
+
+            &:hover {
+                background-color: $box-color;
+
+            }
+        }
+    }
+
+        @include big-screen {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            @include space (0, 0em);
+            position: relative;
+            left: 100px;
+            width: 100%;
         }
     }
 
@@ -152,6 +181,8 @@ ul {
     .menu:focus {
         display: none;
     }
+
+
 }
 
 
