@@ -24,6 +24,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', end
         "contact"
         "footer";
     justify-content: center;
+
+    @include big-screen {
+        grid-template-areas:
+            "header"
+            "nav"
+            "about"
+            "projects"
+            "speaking"
+            "writing"
+            "contact"
+            "footer";
+    }
 }
 
 h1 {
@@ -134,7 +146,9 @@ ul {
     height: 50px;
     line-height: 60px;
     grid-area: nav;
-    position: fixed;
+    // position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1;
 

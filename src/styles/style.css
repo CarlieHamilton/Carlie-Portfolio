@@ -18,6 +18,12 @@
           justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  #container {
+        grid-template-areas: "header" "nav" "about" "projects" "speaking" "writing" "contact" "footer";
+  }
+}
+
 h1 {
   color: #FC5185;
   font-family: "Oxygen", sans-serif;
@@ -143,7 +149,9 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
