@@ -228,6 +228,8 @@ ul {
 
 .social-media {
     @include icons;
+    max-width: 700px;
+    margin: 0 auto;
     a {
         color: $main-font-color;
         &:hover {
