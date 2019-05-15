@@ -13,6 +13,25 @@
     padding: 50% 0;
 }
 
+// BUTTON
+#about-button {
+    @include content-font($box-color);
+    display: block;
+    border: 1px solid $box-color;
+    a {
+        color: $box-color;
+        text-decoration: none;
+    }
+}
+
+#about-button:hover {
+    background-color: $box-color;
+    border: 1px solid $main-font-color;
+    a {
+        color: $main-font-color;
+    }
+}
+
 // ABOUT
 #about {
     background-color: $main-bg-color;
@@ -24,11 +43,40 @@
     }
 }
 
+.techstack {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    @include space;
+    li {
+        margin-right: 30px;
+        line-height: 4em;
+    }
+    li:hover {
+        color: $hot-pink;
+    }
+    i {
+    font-size: 4em;
+}
+}
+
 // PROJECTS
 #projects {
-    background-color: $box-color;
+    background-color: $secondary-bg-color;
     grid-area: projects;
     @include main-positioning;
+    .box {
+        background-color: $secondary-bg-color;
+        margin: 5px;
+        @include content-font;
+        @include space;
+    }
+    h2 {
+        color: $light-hot-pink;
+    }
 }
 
 // SPEAKING

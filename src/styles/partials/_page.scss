@@ -40,6 +40,10 @@ img {
     max-width: 100%;
 }
 
+a {
+
+}
+
 .box {
     @include space(1em);
     background-color: $box-color;
@@ -49,6 +53,8 @@ img {
 .wrapper {
     display: inline-block;
 }
+
+
 
 // NAV MENU
 #nav {
@@ -107,4 +113,13 @@ img {
     // background-color: $main-bg-color;
     grid-area: footer;
     @include main-positioning;
+}
+
+// ITEMS
+
+.images {
+    @include space(0, 0);
+    // display: block;
+    border-radius: 2em;
+    max-width: auto;
 }

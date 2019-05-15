@@ -12,6 +12,28 @@
   padding: 50% 0;
 }
 
+#about-button {
+  color: #3FC1C9;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  display: block;
+  border: 1px solid #3FC1C9;
+}
+
+#about-button a {
+  color: #3FC1C9;
+  text-decoration: none;
+}
+
+#about-button:hover {
+  background-color: #3FC1C9;
+  border: 1px solid #F0F8FF;
+}
+
+#about-button:hover a {
+  color: #F0F8FF;
+}
+
 #about {
   background-color: #000080;
   -ms-grid-row: 3;
@@ -28,13 +50,59 @@
   line-height: 1.5em;
 }
 
+.techstack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.techstack li {
+  margin-right: 30px;
+  line-height: 4em;
+}
+
+.techstack li:hover {
+  color: #FC5185;
+}
+
+.techstack i {
+  font-size: 4em;
+}
+
 #projects {
-  background-color: #3FC1C9;
+  background-color: #0075d6;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: projects;
   position: relative;
   top: 0px;
+}
+
+#projects .box {
+  background-color: #0075d6;
+  margin: 5px;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+#projects h2 {
+  color: #FF69B4;
 }
 
 #speaking {
@@ -187,5 +255,12 @@ img {
   grid-area: footer;
   position: relative;
   top: 0px;
+}
+
+.images {
+  margin: 0;
+  padding: 0;
+  border-radius: 2em;
+  max-width: auto;
 }
 /*# sourceMappingURL=style.css.map */
