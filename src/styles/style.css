@@ -157,9 +157,8 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: auto;
     margin: 0;
     padding: 0em;
@@ -185,6 +184,20 @@ ul {
 
 #nav .menu:focus {
   display: none;
+}
+
+#nav #menu-logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #nav #menu-logo {
+    display: inline-block;
+  }
+  #nav #menu-logo i {
+    font-size: 1em;
+    color: #000080;
+  }
 }
 
 #footer {
@@ -256,6 +269,10 @@ small {
   height: 50vh;
   text-align: center;
   padding: 50% 0;
+}
+
+#header i {
+  font-size: 1em;
 }
 
 #about-button {

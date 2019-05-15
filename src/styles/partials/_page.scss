@@ -161,7 +161,7 @@ ul {
 
         @include big-screen {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: auto;
             @include space (0, 0em);
             position: relative;
@@ -182,9 +182,18 @@ ul {
         display: none;
     }
 
+    #menu-logo {
+        display: none;
+        @include big-screen {
+            display: inline-block;
+            i {
+                font-size: 1em;
+                color: $main-bg-color;
+            }
+        }
+    }
 
 }
-
 
 // FOOTER
 #footer {
