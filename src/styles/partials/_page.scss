@@ -60,7 +60,7 @@ a {
     color: $hot-pink;
     text-decoration: none;
     &:hover {
-        color: $box-color;
+        color: $secondary-bg-color;
         // background-color: $main-font-color;
     }
 }
@@ -88,7 +88,7 @@ ul {
     background-color: $secondary-bg-color;
     color: $dark-font-color;
     @include big-screen {
-        @include space (0em 3em, 3em)
+        @include space (0, 4em)
     }
 }
 
@@ -108,8 +108,16 @@ ul {
     @include big-screen {
         display: flex;
         width: 100%;
-        align-items: flex-start;
         justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include biggest-screen {
+        background-color: $main-font-color;
+        @include space(0, 30px 0);
+        flex-direction: row;
+        align-items: flex-start;
     }
 }
 
@@ -264,14 +272,29 @@ small {
     max-width: auto;
 }
 
+.img-wrapper {
+    @include space;
+    @include big-screen {
+
+        @include space (0, 0)
+    }
+
+    @include biggest-screen {
+        order: 2;
+    }
+}
+
 .image-wrapper-full {
     @include space(0, 0);
     @include big-screen {
-        @include space(0 3em 3em, 0)
-        order: 2;
         img {
             border-radius: 3em;
             max-width: 700px;
         }
+    }
+
+    @include biggest-screen {
+        order: 2;
+        @include space(0 3em, 0)
     }
 }

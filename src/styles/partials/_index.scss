@@ -46,8 +46,9 @@
     @include main-positioning;
     .box {
         background-color: $main-bg-color;
+        max-width: 800px;
         @include content-font;
-        @include big-screen {
+        @include biggest-screen {
             @include big-screen-box;
         }
     }
@@ -55,13 +56,7 @@
 
 
 
-.img-wrapper {
-    @include space;
-    @include big-screen {
-        order: 2;
-        @include space (0 3em 3em, 0)
-    }
-}
+
 
 .techstack {
     @include icons;
@@ -92,20 +87,20 @@
     .box {
         background-color: $main-bg-color;
         @include content-font;
-                @include big-screen {
+        @include biggest-screen {
             @include big-screen-box;
         }
     }
 
-    // for parallax
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
+    // // for parallax
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // perspective: 2px;
 }
 
-.speaking-img::after {
-    background-image: url(/images/carliepresentation.jpg);
-}
+// .speaking-img::after {
+//     background-image: url(/images/carliepresentation.jpg);
+// }
 
 // WRITING
 #writing {

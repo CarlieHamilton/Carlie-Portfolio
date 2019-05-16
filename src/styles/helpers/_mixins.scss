@@ -17,6 +17,7 @@
 @mixin main-positioning {
     position: relative;
     top: 0px;
+    @include space (0, 0 0 60px 0)
 }
 
 @mixin icons {
@@ -43,6 +44,13 @@
     @media screen and (min-width: 768px)  {
         @content;
     }
+}
+
+@mixin biggest-screen {
+    @media screen and (min-width: 1281px) {
+        @content;
+    }
+
 }
 
 @mixin big-screen-box {
