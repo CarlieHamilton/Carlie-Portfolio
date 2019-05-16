@@ -85,9 +85,8 @@ ul {
 
 .box {
     @include space(1em);
-    background-color: $box-color;
+    background-color: $secondary-bg-color;
     color: $dark-font-color;
-    border-radius: 2em;
     @include big-screen {
         @include space (0em 3em, 3em)
     }
@@ -146,13 +145,13 @@ ul {
     height: 50px;
     line-height: 60px;
     grid-area: nav;
-    // position: fixed;
-    position: sticky;
-    top: 0;
+    position: fixed;
     width: 100%;
     z-index: 1;
 
     @include big-screen {
+        position: sticky;
+        top: 0;
         border-bottom: 1px solid $main-font-color;
         background-color: $hot-pink;
         height: auto;
@@ -189,10 +188,10 @@ ul {
 
         @include big-screen {
             border: none;
-            @include space(0, 0 2em)
+            @include space(0, 0 4.3vw);
 
             &:hover {
-                background-color: $box-color;
+                background-color: $secondary-bg-color;
 
             }
         }
@@ -204,7 +203,7 @@ ul {
             width: auto;
             @include space (0, 0em);
             position: relative;
-            left: 10px;
+            left: 0px;
             width: 100%;
         }
     }

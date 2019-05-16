@@ -125,15 +125,13 @@
                 <h2><i class="fas fa-terminal logo"></i> Contact</h2>
                 <div class="box">
                     <!-- Thanks to https://mailthis.to/ for the form/sending email functionality -->
-                    <form action="https://mailthis.to/carliemhamilton@gmail.com"
-                    method="POST" encType="multipart/form-data" id="email-form">
+                    <form accept-charset="UTF-8" action="https://usebasin.com/f/4cf1473d0a1d" method="POST" id="email-form">
                     <input type="text" name="name" placeholder="Your name">
                     <input type="email" name="_replyto" placeholder="Your email">
                     <textarea name="message" placeholder="Enter your message here"></textarea>
                     <input type="hidden" name="_subject" value="Contact form submitted from carliehamilton portfolio">
-                    <input type="hidden" name="_after" value="https://carlie.netlify.com/index.html#contact">
-                    <input type="hidden" name="_honeypot" value="">
-                    <input type="hidden" name="_confirmation" value="Email sent, thank you!">
+                    <input type="hidden" name="_next" value="https://carlie.netlify.com"/>
+                      <input type="hidden" id="gotcha" name="_gotcha">
                     <input type="submit" value="Send">
                 </form>
 

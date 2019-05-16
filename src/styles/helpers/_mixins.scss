@@ -46,7 +46,7 @@
 }
 
 @mixin big-screen-box {
-    background-color: $box-color;
+    background-color: $main-font-color;
     color: $dark-font-color;
     max-width: 700px;
 }
