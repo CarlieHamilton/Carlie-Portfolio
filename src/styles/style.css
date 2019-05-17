@@ -580,6 +580,10 @@ small {
   color: #FF69B4;
 }
 
+.project-box {
+  border-bottom: 1px solid #F0F8FF;
+}
+
 #speaking {
   background-color: #000080;
   -ms-grid-row: 5;
