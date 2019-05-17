@@ -50,14 +50,7 @@ h2 {
     }
 }
 
-h3 {
-    font-size: 2em;
-    line-height: 1.3em;
-    @include header-font($main-font-color);
-    i:hover {
-        color: $light-hot-pink;
-    }
-}
+
 
 img {
     max-width: 100%;

@@ -50,17 +50,6 @@ h2 {
   }
 }
 
-h3 {
-  font-size: 2em;
-  line-height: 1.3em;
-  color: #F0F8FF;
-  font-family: "Oxygen", sans-serif;
-}
-
-h3 i:hover {
-  color: #FF69B4;
-}
-
 img {
   max-width: 100%;
 }
@@ -583,6 +572,17 @@ small {
 }
 
 #projects h2 {
+  color: #FF69B4;
+}
+
+#projects h3 {
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #F0F8FF;
+  font-family: "Oxygen", sans-serif;
+}
+
+#projects h3 i:hover {
   color: #FF69B4;
 }
 
