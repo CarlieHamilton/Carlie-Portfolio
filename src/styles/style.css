@@ -50,6 +50,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #F0F8FF;
+  font-family: "Oxygen", sans-serif;
+}
+
+h3 i:hover {
+  color: #FF69B4;
+}
+
 img {
   max-width: 100%;
 }
@@ -470,6 +481,8 @@ small {
   margin: 0.5em;
   padding: 0.5em;
   width: 200px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #about-button a {
@@ -478,11 +491,8 @@ small {
 }
 
 #about-button:hover {
-  background-color: #3FC1C9;
+  background-color: #FC5185;
   border: 1px solid #F0F8FF;
-}
-
-#about-button:hover a {
   color: #F0F8FF;
 }
 

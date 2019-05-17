@@ -25,6 +25,7 @@
     border: 1px solid $box-color;
     @include space;
     width: 200px;
+        transition: all 0.3s ease;
     a {
         color: $box-color;
         text-decoration: none;
@@ -32,11 +33,9 @@
 }
 
 #about-button:hover {
-    background-color: $box-color;
+    background-color: $hot-pink;
     border: 1px solid $main-font-color;
-    a {
-        color: $main-font-color;
-    }
+    color: $main-font-color;
 }
 
 // ABOUT
@@ -78,6 +77,7 @@
         color: $light-hot-pink;
     }
 }
+
 
 // SPEAKING
 #speaking {
