@@ -149,7 +149,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  #flex {
+  .flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -168,7 +168,7 @@ ul {
 }
 
 @media screen and (min-width: 1281px) {
-  #flex {
+  .flex {
     background-color: #F0F8FF;
     margin: 0;
     padding: 30px 0;
@@ -568,12 +568,18 @@ small {
 
 #projects .box {
   background-color: #0075d6;
-  margin: 5px;
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
   margin: 0.5em;
   padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #projects .box {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #projects h2 {
@@ -582,6 +588,21 @@ small {
 
 .project-box {
   border-bottom: 1px solid #F0F8FF;
+}
+
+@media screen and (min-width: 768px) {
+  .project-box:last-child {
+    border-bottom: none;
+  }
+  .project-box img {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-deets {
+    max-width: 670px;
+  }
 }
 
 #speaking {

@@ -69,9 +69,11 @@
     @include main-positioning;
     .box {
         background-color: $secondary-bg-color;
-        margin: 5px;
         @include content-font;
         @include space;
+        @include big-screen {
+            @include space(0, 0);
+        }
     }
     h2 {
         color: $light-hot-pink;
@@ -80,6 +82,22 @@
 
 .project-box {
     border-bottom: 1px solid $main-font-color;
+    @include big-screen {
+        &:last-child {
+            border-bottom: none;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+.project-deets {
+    @include big-screen {
+        max-width: 670px;
+    }
 }
 
 // SPEAKING

@@ -114,7 +114,7 @@ ul {
     }
 }
 
-#flex {
+.flex {
     @include big-screen {
         display: flex;
         width: 100%;
