@@ -1,6 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen");
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+html {
+  scroll-behavior: smooth;
+}
+
 #container {
   background: #000080;
   background: linear-gradient(45deg, #000080 0%, #0075d6 62%, #000080 100%);
@@ -8,6 +12,7 @@
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
+  scroll-behavior: smooth;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -355,11 +360,6 @@ ul {
   position: relative;
   left: 8px;
   top: 0px;
-}
-
-#to-top #top-chevron i:hover {
-  color: #FC5185;
-  top: -4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -377,6 +377,11 @@ ul {
 
 #to-top #top-chevron:hover {
   border-color: #FC5185;
+}
+
+#to-top #top-chevron:hover i {
+  color: #FC5185;
+  top: -4px;
 }
 
 small {

@@ -1,16 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
 #container {
-    // background-image: url(/images/bg.jpg);
-    // background-repeat: repeat;
-    // background-attachment: fixed;
-
     // gradient background - from https://www.colorzilla.com/gradient-editor/
     background: #000080;
-background: -moz-linear-gradient(45deg,  #000080 0%, #0075d6 62%, #000080 100%);
-background: -webkit-linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
 background: linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
 
     @include content-font;
+    scroll-behavior: smooth;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -268,19 +266,16 @@ ul {
     align-items: center;
     align-content: center;
     @include space(5em 0, 0);
+
     #top-chevron i{
         font-size: 2.5em;
         color: $box-color;
         position: relative;
         left: 8px;
         top: 0px;
-
-        &:hover {
-            color: $hot-pink;
-            top: -4px;
-            transition: all 0.3s ease;
-        }
+        transition: all 0.3s ease;
     }
+
     #top-chevron {
         border: 1px solid $box-color;
         border-radius: 50%;
@@ -292,6 +287,12 @@ ul {
 
         &:hover {
             border-color: $hot-pink;
+        }
+
+        &:hover i {
+
+            color: $hot-pink;
+            top: -4px;
         }
     }
 }
