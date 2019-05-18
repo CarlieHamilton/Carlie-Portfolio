@@ -802,6 +802,13 @@ small {
 
 #project-head {
   grid-area: project-head;
+  position: relative;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#project-head:hover .fa-terminal:before {
+  content: "\f126";
 }
 
 #project-1 {
