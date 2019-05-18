@@ -50,6 +50,7 @@
         project-image {
             justify-self: center;
         }
+    }
 }
 
 .project-box {
@@ -78,8 +79,7 @@
 
 .project-deets {
     @include big-screen {
-        // max-width: 670px;
-        max-width: auto;
+        max-width: 670px;
 
     }
 }

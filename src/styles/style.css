@@ -738,6 +738,10 @@ small {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #projects project-image {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 .project-box {
@@ -768,7 +772,7 @@ small {
 
 @media screen and (min-width: 768px) {
   .project-deets {
-    max-width: auto;
+    max-width: 670px;
   }
 }
 
