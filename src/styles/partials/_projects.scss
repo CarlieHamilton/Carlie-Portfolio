@@ -44,10 +44,10 @@
             "project-1 project-2 "
             "project-3 project-4 ";
         align-items: start;
-        grid-gap: 2em;
+        grid-gap: 3em;
         justify-content: center;
 
-        project-image {
+        .project-image {
             justify-self: center;
         }
     }
@@ -69,6 +69,17 @@
     @include biggest-screen {
         flex-direction: column;
         border-bottom: none;
+background: #f0f8ff;
+background: -moz-linear-gradient(-45deg,  #f0f8ff 0%, #d3eaff 100%);
+background: -webkit-linear-gradient(-45deg,  #f0f8ff 0%,#d3eaff 100%);
+background: linear-gradient(135deg,  #f0f8ff 0%,#d3eaff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', endColorstr='#d3eaff',GradientType=1 );
+
+
+        @include box-shadow;
+
+
+
 
         img {
             max-height: 500px;

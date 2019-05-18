@@ -27,6 +27,9 @@
     }
 }
 
+#header-title:hover .fa-terminal:before {
+    content: "\f121"
+}
 
 // BUTTON
 #about-button {
@@ -46,6 +49,10 @@
     background-color: $hot-pink;
     border: 1px solid $main-font-color;
     color: $main-font-color;
+}
+
+#about-button:hover .fa-angle-right:before {
+    content: "\f107"
 }
 
 

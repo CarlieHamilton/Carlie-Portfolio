@@ -66,7 +66,7 @@ a {
 }
 
 a:hover {
-  color: #0075d6;
+  color: #0a319f;
 }
 
 input, textarea {
@@ -108,7 +108,7 @@ em {
 .box {
   margin: 1em;
   padding: 0.5em;
-  background-color: #0075d6;
+  background-color: #0a319f;
   color: black;
 }
 
@@ -247,7 +247,7 @@ em {
     padding: 0 4.3vw;
   }
   #nav .menu a:hover {
-    background-color: #0075d6;
+    background-color: #0a319f;
   }
 }
 
@@ -292,10 +292,13 @@ em {
 @media screen and (min-width: 768px) {
   #nav #menu-logo {
     display: inline-block;
-  }
-  #nav #menu-logo i {
     font-size: 1em;
+    font-weight: bold;
   }
+}
+
+.menu-icon:hover .fa-bars:before {
+  content: "\f805";
 }
 
 #footer {
@@ -410,8 +413,9 @@ small {
 .images {
   margin: 0;
   padding: 0;
-  border-radius: 2em;
   max-width: auto;
+  -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .img-wrapper {
@@ -441,8 +445,9 @@ small {
 
 @media screen and (min-width: 768px) {
   .image-wrapper-full img {
-    border-radius: 3em;
     max-width: 700px;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -488,6 +493,10 @@ small {
   padding: 0;
 }
 
+#header-title:hover .fa-terminal:before {
+  content: "\f121";
+}
+
 #about-button {
   color: #3FC1C9;
   font-family: "Open Sans", sans-serif;
@@ -510,6 +519,10 @@ small {
   background-color: #FC5185;
   border: 1px solid #F0F8FF;
   color: #F0F8FF;
+}
+
+#about-button:hover .fa-angle-right:before {
+  content: "\f107";
 }
 
 #about {
@@ -611,7 +624,7 @@ small {
 }
 
 #writing {
-  background-color: #0075d6;
+  background-color: #0a319f;
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: writing;
@@ -622,14 +635,14 @@ small {
 }
 
 #writing .box {
-  background-color: #0075d6;
+  background-color: #0a319f;
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
 }
 
 #writing h2 {
-  color: #FF69B4;
+  color: #FFCCE6;
 }
 
 #contact {
@@ -667,7 +680,7 @@ small {
 }
 
 #projects {
-  background-color: #0075d6;
+  background-color: #0a319f;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: projects;
@@ -678,7 +691,7 @@ small {
 }
 
 #projects .box {
-  background-color: #0075d6;
+  background-color: #0a319f;
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
@@ -704,7 +717,7 @@ small {
 }
 
 #projects h2 {
-  color: #FF69B4;
+  color: #FFCCE6;
 }
 
 #projects h3 {
@@ -715,7 +728,7 @@ small {
 }
 
 #projects h3 i:hover {
-  color: #FF69B4;
+  color: #FFCCE6;
 }
 
 @media screen and (min-width: 1281px) {
@@ -733,12 +746,12 @@ small {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    grid-gap: 2em;
+    grid-gap: 3em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #projects project-image {
+  #projects .project-image {
     -ms-grid-column-align: center;
         justify-self: center;
   }
@@ -764,6 +777,11 @@ small {
         -ms-flex-direction: column;
             flex-direction: column;
     border-bottom: none;
+    background: #f0f8ff;
+    background: linear-gradient(135deg, #f0f8ff 0%, #d3eaff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', endColorstr='#d3eaff',GradientType=1 );
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
   }
   .project-box img {
     max-height: 500px;
@@ -778,7 +796,7 @@ small {
 
 @media screen and (min-width: 1281px) {
   .project-links a {
-    color: #0075d6;
+    color: #0a319f;
   }
 }
 

@@ -58,3 +58,10 @@
     color: $dark-font-color;
     max-width: 700px;
 }
+
+
+@mixin box-shadow {
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+}
