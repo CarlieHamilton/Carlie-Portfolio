@@ -1,0 +1,114 @@
+// PROJECTS
+#projects {
+    background-color: $secondary-bg-color;
+    grid-area: projects;
+    @include main-positioning;
+    .box {
+        background-color: $secondary-bg-color;
+        @include content-font;
+        @include space;
+
+        @include big-screen {
+            @include space(0, 0);
+        }
+
+        @include biggest-screen {
+            @include big-screen-box;
+            // max-width: 100%;
+            @include space(0,)
+        }
+
+    }
+    h2 {
+        color: $light-hot-pink;
+    }
+
+    h3 {
+        font-size: 2em;
+        line-height: 1.3em;
+        @include header-font($main-font-color);
+        i:hover {
+            color: $light-hot-pink;
+        }
+
+        @include biggest-screen {
+            @include header-font
+        }
+    }
+
+
+    @include biggest-screen {
+        display: grid;
+        grid-template-areas:
+            "project-head project-head"
+            "project-1 project-2 "
+            "project-3 project-4 ";
+        align-items: start;
+        grid-gap: 2em;
+        justify-content: center;
+
+        project-image {
+            justify-self: center;
+        }
+}
+
+.project-box {
+    border-bottom: 1px solid $main-font-color;
+    @include big-screen {
+        &:last-child {
+            border-bottom: none;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+    }
+
+
+    @include biggest-screen {
+        flex-direction: column;
+        border-bottom: none;
+
+        img {
+            max-height: 500px;
+        }
+
+    }
+}
+
+.project-deets {
+    @include big-screen {
+        // max-width: 670px;
+        max-width: auto;
+
+    }
+}
+
+.project-links {
+    @include biggest-screen {
+        a {
+            color: $secondary-bg-color;
+
+        }
+    }
+}
+
+#project-head {
+    grid-area: project-head;
+}
+
+#project-1 {
+    grid-area: project-1;
+}
+
+#project-2 {
+    grid-area: project-2;
+}
+
+#project-3 {
+    grid-area: project-3;
+}
+
+#project-4 {
+    grid-area: project-4;
+}

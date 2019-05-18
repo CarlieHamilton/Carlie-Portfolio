@@ -29,6 +29,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1281px) {
+  #container {
+        grid-template-areas: "header header" "nav nav" "about about" "projects projects" "speaking speaking" "writing contact" "footer footer";
+  }
+}
+
 h1 {
   color: #FC5185;
   font-family: "Oxygen", sans-serif;
@@ -92,6 +98,11 @@ i {
 
 ul {
   list-style: none;
+}
+
+em {
+  font-style: normal;
+  background-color: #FC5185;
 }
 
 .box {
@@ -168,6 +179,7 @@ ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: auto;
   }
 }
 
@@ -461,6 +473,21 @@ small {
   font-size: 1em;
 }
 
+.social-top {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-top li {
+  line-height: 1em;
+  margin: 0 7px;
+  padding: 0;
+}
+
 #about-button {
   color: #3FC1C9;
   font-family: "Open Sans", sans-serif;
@@ -510,6 +537,9 @@ small {
     color: black;
     max-width: 700px;
   }
+  #about .box em {
+    color: #F0F8FF;
+  }
 }
 
 .techstack {
@@ -544,67 +574,6 @@ small {
   font-size: 3.5em;
 }
 
-#projects {
-  background-color: #0075d6;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: projects;
-  position: relative;
-  top: 0px;
-  margin: 0;
-  padding: 0 0 60px 0;
-}
-
-#projects .box {
-  background-color: #0075d6;
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-@media screen and (min-width: 768px) {
-  #projects .box {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-#projects h2 {
-  color: #FF69B4;
-}
-
-#projects h3 {
-  font-size: 2em;
-  line-height: 1.3em;
-  color: #F0F8FF;
-  font-family: "Oxygen", sans-serif;
-}
-
-#projects h3 i:hover {
-  color: #FF69B4;
-}
-
-.project-box {
-  border-bottom: 1px solid #F0F8FF;
-}
-
-@media screen and (min-width: 768px) {
-  .project-box:last-child {
-    border-bottom: none;
-  }
-  .project-box img {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .project-deets {
-    max-width: 670px;
-  }
-}
-
 #speaking {
   background-color: #000080;
   -ms-grid-row: 5;
@@ -623,11 +592,21 @@ small {
   line-height: 1.5em;
 }
 
+@media screen and (min-width: 768px) {
+  #speaking .box {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: -100px;
+  }
+}
+
 @media screen and (min-width: 1281px) {
   #speaking .box {
     background-color: #F0F8FF;
     color: black;
     max-width: 700px;
+    left: auto;
   }
 }
 
@@ -685,5 +664,137 @@ small {
 
 #email-form textarea {
   height: 100px;
+}
+
+#projects {
+  background-color: #0075d6;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: projects;
+  position: relative;
+  top: 0px;
+  margin: 0;
+  padding: 0 0 60px 0;
+}
+
+#projects .box {
+  background-color: #0075d6;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  #projects .box {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  #projects .box {
+    background-color: #F0F8FF;
+    color: black;
+    max-width: 700px;
+    margin: 0;
+    padding: 0.5em;
+  }
+}
+
+#projects h2 {
+  color: #FF69B4;
+}
+
+#projects h3 {
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #F0F8FF;
+  font-family: "Oxygen", sans-serif;
+}
+
+#projects h3 i:hover {
+  color: #FF69B4;
+}
+
+@media screen and (min-width: 1281px) {
+  #projects h3 {
+    color: #FC5185;
+    font-family: "Oxygen", sans-serif;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  #projects {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "project-head project-head" "project-1 project-2 " "project-3 project-4 ";
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    grid-gap: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.project-box {
+  border-bottom: 1px solid #F0F8FF;
+}
+
+@media screen and (min-width: 768px) {
+  .project-box:last-child {
+    border-bottom: none;
+  }
+  .project-box img {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .project-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: none;
+  }
+  .project-box img {
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-deets {
+    max-width: auto;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .project-links a {
+    color: #0075d6;
+  }
+}
+
+#project-head {
+  grid-area: project-head;
+}
+
+#project-1 {
+  grid-area: project-1;
+}
+
+#project-2 {
+  grid-area: project-2;
+}
+
+#project-3 {
+  grid-area: project-3;
+}
+
+#project-4 {
+  grid-area: project-4;
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,16 @@
 
 }
 
+.social-top {
+    font-size: 1.5em;
+    @include space(0,0);
+    justify-content: center;
+    li {
+        line-height: 1em;
+        @include space(0 7px, 0)
+    }
+}
+
 
 // BUTTON
 #about-button {
@@ -38,6 +48,8 @@
     color: $main-font-color;
 }
 
+
+
 // ABOUT
 #about {
     background-color: $main-bg-color;
@@ -49,6 +61,10 @@
         @include content-font;
         @include biggest-screen {
             @include big-screen-box;
+
+            em {
+                color: $main-font-color;
+            }
         }
     }
 }
@@ -62,52 +78,6 @@
 
 }
 
-// PROJECTS
-#projects {
-    background-color: $secondary-bg-color;
-    grid-area: projects;
-    @include main-positioning;
-    .box {
-        background-color: $secondary-bg-color;
-        @include content-font;
-        @include space;
-        @include big-screen {
-            @include space(0, 0);
-        }
-    }
-    h2 {
-        color: $light-hot-pink;
-    }
-
-    h3 {
-        font-size: 2em;
-        line-height: 1.3em;
-        @include header-font($main-font-color);
-        i:hover {
-            color: $light-hot-pink;
-        }
-    }
-}
-
-.project-box {
-    border-bottom: 1px solid $main-font-color;
-    @include big-screen {
-        &:last-child {
-            border-bottom: none;
-        }
-
-        img {
-            margin-top: 20px;
-        }
-    }
-
-}
-
-.project-deets {
-    @include big-screen {
-        max-width: 670px;
-    }
-}
 
 // SPEAKING
 #speaking {
@@ -117,8 +87,16 @@
     .box {
         background-color: $main-bg-color;
         @include content-font;
+
+        @include big-screen {
+            position: relative;
+            @include space(0,0);
+            left: -100px;
+        }
+
         @include biggest-screen {
             @include big-screen-box;
+            left: auto;
         }
     }
 

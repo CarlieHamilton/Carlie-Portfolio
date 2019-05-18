@@ -34,6 +34,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', end
             "contact"
             "footer";
     }
+
+    @include biggest-screen {
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "about about"
+            "projects projects"
+            "speaking speaking"
+            "writing contact"
+            "footer footer";
+    }
 }
 
 h1 {
@@ -83,6 +94,11 @@ ul {
     list-style: none;
 }
 
+em {
+    font-style: normal;
+    background-color: $hot-pink;
+}
+
 .box {
     @include space(1em);
     background-color: $secondary-bg-color;
@@ -121,6 +137,7 @@ ul {
         @include space(0, 30px 0);
         flex-direction: row;
         align-items: flex-start;
+        width: auto;
     }
 }
 
