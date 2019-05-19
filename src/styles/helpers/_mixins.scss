@@ -42,7 +42,7 @@
 
 @mixin social-media {
     max-width: 350px;
-    margin: 0 auto;
+    margin: 0 50px;
     a {
         color: $main-font-color;
         &:hover {
@@ -56,6 +56,10 @@
         @include biggest-screen {
             font-size: 3.5em;
         }
+    }
+
+    @include big-screen {
+        margin: 0 auto;
     }
 
     @include biggest-screen {
