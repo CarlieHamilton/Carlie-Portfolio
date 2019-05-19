@@ -96,6 +96,11 @@
     .box {
         background-color: $secondary-bg-color;
         @include content-font;
+
+        @include biggest-screen {
+            @include big-screen-box;
+
+        }
     }
     h2 {
         color: $light-hot-pink;

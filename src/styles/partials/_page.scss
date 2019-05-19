@@ -75,12 +75,25 @@ a {
         // background-color: $main-font-color;
     }
 
-
     @include biggest-screen {
         color: $secondary-bg-color;
 
         &:hover {
             color: $hot-pink;
+        }
+    }
+}
+
+.inline-link {
+    a:hover {
+        background-color: $main-font-color;
+
+    }
+
+
+    @include biggest-screen {
+        a:hover {
+            background: none
         }
     }
 }

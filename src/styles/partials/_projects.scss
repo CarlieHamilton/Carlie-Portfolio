@@ -116,12 +116,19 @@
 
     a {
         color: $main-font-color;
+
+        &:hover {
+            color: $light-hot-pink;
+        }
     }
 
     @include biggest-screen {
         a {
             color: $secondary-bg-color;
 
+            &:hover {
+                color: $hot-pink;
+            }
         }
     }
 }
@@ -129,6 +136,13 @@
 #project-head {
     grid-area: project-head;
 
+    @include biggest-screen {
+
+        h2 {
+
+        @include space(70px 1em 0.5em);
+        }
+    }
 
     &:hover .fa-terminal:before {
         content: "\f126";

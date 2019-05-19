@@ -43,8 +43,6 @@
 @mixin social-media {
     max-width: 350px;
     margin: 0 auto;
-    // justify-content: center;
-    // justify-items:  space-around;
     a {
         color: $main-font-color;
         &:hover {
