@@ -33,6 +33,10 @@
 
         @include biggest-screen {
             @include header-font
+
+            i:hover {
+                color: $secondary-bg-color;
+            }
         }
     }
 
@@ -48,7 +52,7 @@
         justify-content: center;
 
         .project-image {
-            justify-self: center;
+            align-self: center;
         }
     }
 }
@@ -69,16 +73,22 @@
     @include biggest-screen {
         flex-direction: column;
         border-bottom: none;
-background: #f0f8ff;
-background: -moz-linear-gradient(-45deg,  #f0f8ff 0%, #d3eaff 100%);
-background: -webkit-linear-gradient(-45deg,  #f0f8ff 0%,#d3eaff 100%);
-background: linear-gradient(135deg,  #f0f8ff 0%,#d3eaff 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', endColorstr='#d3eaff',GradientType=1 );
+        background: #f0f8ff;
+        background: -moz-linear-gradient(-45deg,  #f0f8ff 0%, #d3eaff 100%);
+        background: -webkit-linear-gradient(-45deg,  #f0f8ff 0%,#d3eaff 100%);
+        background: linear-gradient(135deg,  #f0f8ff 0%,#d3eaff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', endColorstr='#d3eaff',GradientType=1 );
 
 
         @include box-shadow;
 
+        a {
+            color: $secondary-bg-color;
+        }
 
+        a:hover {
+            color: $hot-pink;
+        }
 
 
         img {
@@ -96,6 +106,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', end
 }
 
 .project-links {
+    @include icons;
+    max-width: 700px;
+    margin: 0 auto;
+
+    ul {
+        @include space(0,0);
+    }
+
+    a {
+        color: $main-font-color;
+    }
+
     @include biggest-screen {
         a {
             color: $secondary-bg-color;
@@ -106,9 +128,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f8ff', end
 
 #project-head {
     grid-area: project-head;
-    position: relative;
-    margin-left: 0;
-    margin-right: auto;
+
 
     &:hover .fa-terminal:before {
         content: "\f126";

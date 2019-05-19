@@ -86,36 +86,7 @@
 }
 
 
-// SPEAKING
-#speaking {
-    background-color: $main-bg-color;
-    grid-area: speaking;
-    @include main-positioning;
-    .box {
-        background-color: $main-bg-color;
-        @include content-font;
 
-        @include big-screen {
-            position: relative;
-            @include space(0,0);
-            left: -100px;
-        }
-
-        @include biggest-screen {
-            @include big-screen-box;
-            left: auto;
-        }
-    }
-
-    // // for parallax
-    // overflow-x: hidden;
-    // overflow-y: auto;
-    // perspective: 2px;
-}
-
-// .speaking-img::after {
-//     background-image: url(/images/carliepresentation.jpg);
-// }
 
 // WRITING
 #writing {
@@ -136,6 +107,7 @@
     // background-color: $main-bg-color;
     grid-area: contact;
     @include main-positioning;
+    @include space(0, 0 0 10px 0)
     .box {
         background-color: transparent;
         @include content-font;
@@ -149,4 +121,21 @@
     textarea {
         height: 100px;
     }
+
+    input {
+        padding: 0.3em;
+    }
+
+    input[type=submit] {
+        padding: 1em;
+        border-radius: 1em;
+        max-width: 300px;
+        align-self: flex-end;
+    }
+
+    input[type=submit]:hover {
+        background-color: $hot-pink;
+    }
 }
+
+

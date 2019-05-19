@@ -40,6 +40,31 @@
 }
 }
 
+@mixin social-media {
+    max-width: 350px;
+    margin: 0 auto;
+    // justify-content: center;
+    // justify-items:  space-around;
+    a {
+        color: $main-font-color;
+        &:hover {
+            color: $hot-pink;
+        }
+    }
+
+    i {
+        font-size: 2em;
+
+        @include biggest-screen {
+            font-size: 3.5em;
+        }
+    }
+
+    @include biggest-screen {
+        max-width: 650px;
+    }
+}
+
 @mixin big-screen {
     @media screen and (min-width: 768px)  {
         @content;

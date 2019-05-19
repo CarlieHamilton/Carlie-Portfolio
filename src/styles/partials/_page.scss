@@ -35,16 +35,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', end
             "footer";
     }
 
-    @include biggest-screen {
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "about about"
-            "projects projects"
-            "speaking speaking"
-            "writing contact"
-            "footer footer";
-    }
+    // @include biggest-screen {
+    //     grid-template-areas:
+    //         "header header"
+    //         "nav nav"
+    //         "about about"
+    //         "projects projects"
+    //         "speaking speaking"
+    //         "writing contact"
+    //         "footer footer";
+    // }
 }
 
 h1 {
@@ -68,11 +68,20 @@ img {
 }
 
 a {
-    color: $hot-pink;
+    color: $light-hot-pink;
     text-decoration: none;
     &:hover {
         color: $secondary-bg-color;
         // background-color: $main-font-color;
+    }
+
+
+    @include biggest-screen {
+        color: $secondary-bg-color;
+
+        &:hover {
+            color: $hot-pink;
+        }
     }
 }
 
@@ -167,101 +176,6 @@ em {
 
 
 
-// NAV MENU
-#nav {
-    text-align: right;
-    height: 50px;
-    line-height: 60px;
-    grid-area: nav;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-
-    @include big-screen {
-        position: sticky;
-        top: 0;
-        border-bottom: 1px solid $main-font-color;
-        background-color: $hot-pink;
-        height: auto;
-    }
-
-    label {
-        display: block;
-        cursor: pointer;
-        color: $hot-pink;
-        @include space(0, 0 0.8em);
-        font-size: 2em;
-        @include big-screen {
-            display: none;
-        }
-    }
-
-    #toggle {
-        display: none;
-    }
-
-    .menu {
-        text-align: center;
-        width: 100px;
-        display: none;
-        list-style: none;
-        a {
-        display: block;
-        border-bottom: 1px solid $main-font-color;
-        margin: 0px;
-        background-color: $hot-pink;
-        color: $main-font-color;
-        // transform: scale(1, 0);
-        // transition: transform 400ms ease-in-out;
-
-        @include big-screen {
-            border: none;
-            @include space(0, 0 4.3vw);
-
-            &:hover {
-                background-color: $secondary-bg-color;
-
-            }
-        }
-    }
-
-        @include big-screen {
-            display: flex;
-            justify-content: space-around;
-            width: auto;
-            @include space (0, 0em);
-            position: relative;
-            left: 0px;
-            width: 100%;
-        }
-    }
-
-    #toggle:checked + .menu {
-        width: 100%;
-        @include space (0, 0);
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-
-    }
-    .menu:focus {
-        display: none;
-    }
-
-    #menu-logo {
-        display: none;
-        @include big-screen {
-            display: inline-block;
-            font-size: 1em;
-            font-weight: bold;
-        }
-    }
-
-}
-
-.menu-icon:hover .fa-bars:before {
-    content: "\f805";
-}
 
 // FOOTER
 #footer {
@@ -272,22 +186,16 @@ em {
 
 .social-media {
     @include icons;
-    max-width: 700px;
-    margin: 0 auto;
-    a {
-        color: $main-font-color;
-        &:hover {
-            color: $hot-pink;
-        }
-    }
+    @include social-media;
 }
+
 
 #to-top {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    @include space(5em 0, 0);
+    @include space(4em 0, 0);
 
     #top-chevron i{
         font-size: 2.5em;
