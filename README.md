@@ -81,13 +81,13 @@ End of day trello board:
 
 #### Day Two - Wednesday 15 May 2019
 
-On day two I finished the most of the mobile layout, added a css animation to my main button, and made the main navigation work in desktop/tablet mode. 
+On day two I finished the most of the mobile layout, added a css animation to my main button, and made the main navigation work in desktop/tablet mode.
 
 ![trello end of day 2](/docs/trello15may.png)
 
-#### Weekend 
+#### Weekend
 
-I continued to work on my website. I have changed my secondary blue colour so that it is more accessible, and have decided to put the whole website on one page instead of a seperate page for my projects. This way the webpage will also be easier to update and maintain. 
+I continued to work on my website. I have changed my secondary blue colour so that it is more accessible, and have decided to put the whole website on one page instead of a seperate page for my projects. This way the webpage will also be easier to update and maintain.
 
 ![trello end of weekend](/docs/trello19may.png)
 
