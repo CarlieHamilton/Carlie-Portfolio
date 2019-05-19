@@ -85,6 +85,12 @@ On day two I finished the most of the mobile layout, added a css animation to my
 
 ![trello end of day 2](/docs/trello15may.png)
 
+#### Weekend 
+
+I continued to work on my website. I have changed my secondary blue colour so that it is more accessible, and have decided to put the whole website on one page instead of a seperate page for my projects. This way the webpage will also be easier to update and maintain. 
+
+![trello end of weekend](/docs/trello19may.png)
+
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
  - Describe key events in the development of the internet from the 1980s to today (max. 150 words)
