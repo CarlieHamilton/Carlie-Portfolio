@@ -14,7 +14,6 @@
 
         @include biggest-screen {
             @include big-screen-box;
-            // max-width: 100%;
             @include space(0,)
         }
 
@@ -32,7 +31,7 @@
         }
 
         @include biggest-screen {
-            @include header-font
+            @include header-font;
 
             i:hover {
                 color: $secondary-bg-color;
@@ -46,7 +45,9 @@
         grid-template-areas:
             "project-head project-head"
             "project-1 project-2 "
-            "project-3 project-4 ";
+            "project-3 project-4 "
+            "more-projects more-projects";
+
         align-items: start;
         grid-gap: 3em;
         justify-content: center;
@@ -60,7 +61,7 @@
 .project-box {
     border-bottom: 1px solid $main-font-color;
 
-    &:last-child {
+    &:nth-last-child(2) {
         border-bottom: none;
     }
 
@@ -163,4 +164,48 @@
 
 #project-4 {
     grid-area: project-4;
+}
+
+#more-projects {
+    	display: flex;
+	align-items: center;
+    justify-content: center;
+    grid-area: more-projects;
+
+    a {
+        color: $box-color;
+    }
+
+}
+
+
+#more-projects-button {
+	position: relative;
+    border: 1px solid $box-color;
+    @include space;
+
+    &:hover {
+        @include ease;
+        @include button-hover;
+    }
+}
+
+@keyframes moveArrow {
+
+	0% {
+		transform: translateX(0px);
+	}
+
+	49% {
+		transform: translateX(50px);
+	}
+
+	50% {
+		transform: translateX(-50px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+
 }

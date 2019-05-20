@@ -32,7 +32,7 @@
     border: 1px solid $box-color;
     @include space;
     width: 200px;
-        transition: all 0.3s ease;
+    @include ease;
     a {
         color: $box-color;
         text-decoration: none;
@@ -40,9 +40,7 @@
 }
 
 #about-button:hover {
-    background-color: $hot-pink;
-    border: 1px solid $main-font-color;
-    color: $main-font-color;
+    @include button-hover;
 }
 
 #about-button:hover .fa-angle-right:before {

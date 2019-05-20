@@ -906,7 +906,7 @@ small {
   #projects {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "project-head project-head" "project-1 project-2 " "project-3 project-4 ";
+        grid-template-areas: "project-head project-head" "project-1 project-2 " "project-3 project-4 " "more-projects more-projects";
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -926,7 +926,7 @@ small {
   border-bottom: 1px solid #F0F8FF;
 }
 
-.project-box:last-child {
+.project-box:nth-last-child(2) {
   border-bottom: none;
 }
 
@@ -1049,6 +1049,76 @@ small {
 
 #project-4 {
   grid-area: project-4;
+}
+
+#more-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: more-projects;
+}
+
+#more-projects a {
+  color: #3FC1C9;
+}
+
+#more-projects-button {
+  position: relative;
+  border: 1px solid #3FC1C9;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+#more-projects-button:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #FC5185;
+  border: 1px solid #F0F8FF;
+  color: #F0F8FF;
+}
+
+@-webkit-keyframes moveArrow {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  49% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  49% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 #speaking {

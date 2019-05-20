@@ -92,3 +92,13 @@
     -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
 }
+
+@mixin ease {
+    transition: all 0.3s ease;
+}
+
+@mixin button-hover {
+    background-color: $hot-pink;
+    border: 1px solid $main-font-color;
+    color: $main-font-color;
+}
