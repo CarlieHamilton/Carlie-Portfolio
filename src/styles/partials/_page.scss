@@ -4,8 +4,10 @@ html {
 #container {
     // gradient background - from https://www.colorzilla.com/gradient-editor/
     background: $main-bg-color;
-background: linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
+    background: -moz-linear-gradient(45deg,  #000080 0%, #0075d6 62%, #000080 100%);
+    background: -webkit-linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
+    background: linear-gradient(45deg,  #000080 0%,#0075d6 62%,#000080 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
 
     @include content-font;
     scroll-behavior: smooth;

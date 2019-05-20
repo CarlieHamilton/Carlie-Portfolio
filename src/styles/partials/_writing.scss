@@ -1,0 +1,36 @@
+// WRITING
+#writing {
+    background-color: $secondary-bg-color;
+    grid-area: writing;
+    @include main-positioning;
+    .box {
+        background-color: $secondary-bg-color;
+        @include content-font;
+
+        @include big-screen {
+            position: relative;
+            @include space(0,0);
+            left: -100px;
+        }
+
+        @include biggest-screen {
+            @include big-screen-box;
+            left: auto;
+        }
+    }
+
+    ul {
+        padding-inline-start: 0px;
+        i {
+            padding-right: 5px;
+        }
+    }
+
+    h2 {
+        color: $light-hot-pink;
+    }
+}
+
+.writing-head:hover .fa-terminal:before {
+    content: "\f518"
+}

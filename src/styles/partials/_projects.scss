@@ -59,10 +59,8 @@
 
 .project-box {
     border-bottom: 1px solid $main-font-color;
-    @include big-screen {
-        &:last-child {
-            border-bottom: none;
-        }
+    &:last-child {
+        border-bottom: none;
 
         img {
             margin-top: 20px;
