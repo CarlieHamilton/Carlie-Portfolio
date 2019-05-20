@@ -224,7 +224,7 @@ em {
   margin: 0.5em;
   padding: 0.5em;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 0 50px;
 }
 
 .social-media li {
@@ -255,6 +255,12 @@ em {
 @media screen and (min-width: 1281px) {
   .social-media i {
     font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    margin: 0 auto;
   }
 }
 
@@ -545,6 +551,15 @@ small {
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #contact .box {
+    margin: 0 auto;
+    padding: 0 4em 4em 4em;
+  }
 }
 
 #email-form {

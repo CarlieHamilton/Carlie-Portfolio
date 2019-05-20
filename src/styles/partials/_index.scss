@@ -112,10 +112,16 @@
     // background-color: $main-bg-color;
     grid-area: contact;
     @include main-positioning;
-    @include space(0, 0 0 10px 0)
+    @include space(0, 0 0 10px 0);
     .box {
         background-color: transparent;
         @include content-font;
+        max-width: 650px;
+        margin: 0 auto;
+
+        @include big-screen {
+            @include space(0 auto, 0 4em 4em 4em)
+        }
     }
 }
 
