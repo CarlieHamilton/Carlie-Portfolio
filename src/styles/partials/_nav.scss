@@ -37,14 +37,13 @@
         width: 100px;
         display: none;
         list-style: none;
+
         a {
         display: block;
         border-bottom: 1px solid $main-font-color;
         margin: 0px;
         background-color: $hot-pink;
         color: $main-font-color;
-        // transform: scale(1, 0);
-        // transition: transform 400ms ease-in-out;
 
         @include big-screen {
             border: none;
@@ -52,10 +51,9 @@
 
             &:hover {
                 background-color: $secondary-bg-color;
-
             }
         }
-    }
+        }
 
         @include big-screen {
             display: flex;
@@ -93,4 +91,8 @@
 
 .menu-icon:hover .fa-bars:before {
     content: "\f805";
+}
+
+#menu-logo:hover .fa-terminal:before {
+    content: "\f5fc";
 }

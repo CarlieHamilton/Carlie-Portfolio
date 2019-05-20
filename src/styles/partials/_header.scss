@@ -1,9 +1,3 @@
-
-
-
-// Sections
-
-
 // HEADER
 #header {
     grid-area: header;
@@ -28,7 +22,7 @@
 }
 
 #header-title:hover .fa-terminal:before {
-    content: "\f121"
+    content: "\f5fc";
 }
 
 // BUTTON
@@ -52,41 +46,5 @@
 }
 
 #about-button:hover .fa-angle-right:before {
-    content: "\f107"
+    content: "\f107";
 }
-
-
-
-// ABOUT
-#about {
-    background-color: $main-bg-color;
-    grid-area: about;
-    @include main-positioning;
-    .box {
-        background-color: $main-bg-color;
-        max-width: 800px;
-        @include content-font;
-        @include biggest-screen {
-            @include big-screen-box;
-
-            em {
-                color: $main-font-color;
-            }
-        }
-    }
-}
-
-
-
-
-
-.techstack {
-    @include icons;
-
-}
-
-
-
-
-
-
