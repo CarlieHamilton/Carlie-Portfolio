@@ -8,6 +8,10 @@
     width: 100%;
     z-index: 1;
 
+    @include wide-screen {
+        line-height: 50px;
+    }
+
     @include big-screen {
         position: sticky;
         top: 0;
