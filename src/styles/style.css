@@ -23,7 +23,7 @@ html {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #container {
         grid-template-areas: "header" "nav" "about" "projects" "speaking" "writing" "contact" "footer";
   }
@@ -43,7 +43,7 @@ h2 {
   padding: 0.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   h2 {
     margin: 70px 8em 0.5em;
     padding: 0.5em;
@@ -125,7 +125,7 @@ em {
   color: black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .box {
     margin: 0;
     padding: 4em;
@@ -137,7 +137,7 @@ em {
   padding: 50% 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .wrapper {
     padding: 25% 0;
     display: -webkit-box;
@@ -161,7 +161,13 @@ em {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-height: 460px) {
+  .wrapper {
+    padding: 10% 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,7 +264,7 @@ em {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .social-media {
     margin: 0 auto;
   }
@@ -340,7 +346,7 @@ small {
   padding: 0.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .img-wrapper {
     margin: 0;
     padding: 0;
@@ -360,7 +366,7 @@ small {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .image-wrapper-full img {
     max-width: 700px;
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.75);
@@ -664,7 +670,7 @@ small {
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #nav {
     position: -webkit-sticky;
     position: sticky;
@@ -684,7 +690,7 @@ small {
   font-size: 2em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #nav label {
     display: none;
   }
@@ -709,7 +715,7 @@ small {
   color: #F0F8FF;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #nav .menu a {
     border: none;
     margin: 0;
@@ -720,7 +726,7 @@ small {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #nav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -758,7 +764,7 @@ small {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #nav #menu-logo {
     display: inline-block;
     font-size: 1em;
@@ -860,7 +866,7 @@ small {
   padding: 0.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #projects .box {
     margin: 0;
     padding: 0;
@@ -958,7 +964,7 @@ small {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   .project-deets {
     max-width: 670px;
   }
@@ -1139,7 +1145,7 @@ small {
   line-height: 1.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #speaking .box {
     position: relative;
     margin: 0;
@@ -1188,7 +1194,7 @@ small {
   line-height: 1.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #writing .box {
     position: relative;
     margin: 0;
@@ -1244,7 +1250,7 @@ small {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 461px) {
   #contact .box {
     margin: 0 auto;
     padding: 0 4em 4em 4em;

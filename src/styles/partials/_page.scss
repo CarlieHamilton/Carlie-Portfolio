@@ -145,6 +145,10 @@ em {
     @include biggest-screen {
         padding: 20% 0;
     }
+
+    @include wide-screen {
+        padding: 10% 0;
+    }
 }
 
 .flex {
