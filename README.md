@@ -91,6 +91,19 @@ I continued to work on my website. I have changed my secondary blue colour so th
 
 ![trello end of weekend](/docs/trello19may.png)
 
+
+#### Monday 20 May 2019
+
+I finalised my layout for the contact section of the website.
+
+![trello end of day Monday 20](/docs/trello20may.png)
+
+#### Tuesday 21 May 2019
+
+I attempted to add some css animations to my main navigation menu, but had troubles. If I added a transition to the menu in mobile mode, I couldn't "reset" it for the desktop mode. And when I tried to add a transition to my menu in tablet/desktop mode, I couldn't style it.
+
+![trello  end of day Tuesday](/docs/trello21may.png)
+
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
  - Describe key events in the development of the internet from the 1980s to today (max. 150 words)
