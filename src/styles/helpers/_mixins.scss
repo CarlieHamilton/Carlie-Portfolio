@@ -43,6 +43,7 @@
 @mixin social-media {
     max-width: 350px;
     margin: 0 50px;
+   
     a {
         color: $main-font-color;
         &:hover {

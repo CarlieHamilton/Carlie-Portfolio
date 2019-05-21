@@ -1,6 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen");
-@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Muli|Open+Sans&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -31,14 +30,14 @@ html {
 
 h1 {
   color: #FC5185;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0.5em;
   padding: 0.5em;
 }
 
 h2 {
   color: #FC5185;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0.5em;
   padding: 0.5em;
 }
@@ -672,7 +671,7 @@ small {
 
 @media screen and (max-height: 460px) {
   #nav {
-    line-height: 50px;
+    line-height: 40px;
   }
 }
 
@@ -897,7 +896,7 @@ small {
   font-size: 2em;
   line-height: 1.3em;
   color: #F0F8FF;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 #projects h3 i:hover {
@@ -907,7 +906,7 @@ small {
 @media screen and (min-width: 1281px) {
   #projects h3 {
     color: #FC5185;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Muli", sans-serif;
   }
   #projects h3 i:hover {
     color: #0a319f;
