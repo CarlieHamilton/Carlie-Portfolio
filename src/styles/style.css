@@ -1079,9 +1079,17 @@ img {
 #nav .menu {
   text-align: center;
   width: 100px;
-  display: none;
   list-style: none;
   font-weight: bold;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform-origin: 50% 0;
+  -webkit-transition: 350ms;
+  transition: 350ms;
 }
 
 #nav .menu a {
@@ -1097,9 +1105,15 @@ img {
     border: none;
     margin: 0;
     padding: 0 4.3vw;
+    -webkit-transition: background-color .75s, -webkit-box-shadow .30s;
+    transition: background-color .75s, -webkit-box-shadow .30s;
+    transition: background-color .75s, box-shadow .30s;
+    transition: background-color .75s, box-shadow .30s, -webkit-box-shadow .30s;
   }
   #nav .menu a:hover {
     background-color: #0a319f;
+    -webkit-box-shadow: 0px 0px 0px 5px #FFCCE6;
+            box-shadow: 0px 0px 0px 5px #FFCCE6;
   }
 }
 
@@ -1116,6 +1130,8 @@ img {
     position: relative;
     left: 0px;
     width: 100%;
+    max-height: 100px;
+    -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
   }
 }
 
@@ -1131,6 +1147,8 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  max-height: 1000px;
+  -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
 }
 
 #nav .menu:focus {
