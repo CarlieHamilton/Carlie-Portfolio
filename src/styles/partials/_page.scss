@@ -152,3 +152,8 @@ em {
         width: auto;
     }
 }
+
+.social-media {
+    @include icons;
+    @include social-media;
+}
