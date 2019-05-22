@@ -1,0 +1,36 @@
+img {
+    max-width: 100%;
+}
+
+.images {
+    @include space(0, 0);
+    max-width: auto;
+    @include box-shadow;
+}
+
+.img-wrapper {
+    @include space;
+    @include big-screen {
+
+        @include space (0, 0)
+    }
+
+    @include biggest-screen {
+        order: 2;
+    }
+}
+
+.image-wrapper-full {
+    @include space(0, 0);
+    @include big-screen {
+        img {
+            max-width: 700px;
+            @include box-shadow;
+        }
+    }
+
+    @include biggest-screen {
+        order: 2;
+        @include space(0 3em, 0)
+    }
+}

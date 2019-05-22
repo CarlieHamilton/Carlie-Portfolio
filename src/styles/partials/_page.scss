@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 #container {
     // gradient background - from https://www.colorzilla.com/gradient-editor/
     background: $main-bg-color;
@@ -37,16 +38,6 @@ html {
             "footer";
     }
 
-    // @include biggest-screen {
-    //     grid-template-areas:
-    //         "header header"
-    //         "nav nav"
-    //         "about about"
-    //         "projects projects"
-    //         "speaking speaking"
-    //         "writing contact"
-    //         "footer footer";
-    // }
 }
 
 h1 {
@@ -63,18 +54,11 @@ h2 {
     }
 }
 
-
-
-img {
-    max-width: 100%;
-}
-
 a {
     color: $light-hot-pink;
     text-decoration: none;
     &:hover {
         color: $secondary-bg-color;
-        // background-color: $main-font-color;
     }
 
     @include biggest-screen {
@@ -166,123 +150,5 @@ em {
         flex-direction: row;
         align-items: flex-start;
         width: auto;
-    }
-}
-
-// .parallax-section {
-//     position: relative;
-//     height: 20vh;
-// }
-
-// .parallax::after {
-//   /* Display and position the pseudo-element */
-//   content: " ";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-
-//   /* Move the pseudo-element back away from the camera,
-//    * then scale it back up to fill the viewport.
-//    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-//   transform: translateZ(-1px) scale(1.5);
-//   /* Force the background image to fill the whole element. */
-//   background-size: 100%;
-//   /* Keep the image from overlapping sibling elements. */
-//   z-index: -1;
-// }
-
-
-
-
-// FOOTER
-#footer {
-    // background-color: $main-bg-color;
-    grid-area: footer;
-    @include main-positioning;
-}
-
-.social-media {
-    @include icons;
-    @include social-media;
-}
-
-
-#to-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    @include space(4em 0, 0);
-
-    #top-chevron i{
-        font-size: 2.5em;
-        color: $box-color;
-        position: relative;
-        left: 8px;
-        top: 0px;
-        transition: all 0.3s ease;
-    }
-
-    #top-chevron {
-        border: 1px solid $box-color;
-        border-radius: 50%;
-        @include space (0, 0.3em);
-        position: absolute;
-        display: block;
-        width: 50px;
-        height: 50px;
-
-        &:hover {
-            border-color: $hot-pink;
-        }
-
-        &:hover i {
-
-            color: $hot-pink;
-            top: -4px;
-        }
-    }
-}
-
-small {
-    display: flex;
-    justify-content: center;
-    @include space();
-}
-
-// ITEMS
-
-.images {
-    @include space(0, 0);
-    max-width: auto;
-    @include box-shadow;
-}
-
-.img-wrapper {
-    @include space;
-    @include big-screen {
-
-        @include space (0, 0)
-    }
-
-    @include biggest-screen {
-        order: 2;
-    }
-}
-
-.image-wrapper-full {
-    @include space(0, 0);
-    @include big-screen {
-        img {
-            max-width: 700px;
-            @include box-shadow;
-        }
-    }
-
-    @include biggest-screen {
-        order: 2;
-        @include space(0 3em, 0)
     }
 }

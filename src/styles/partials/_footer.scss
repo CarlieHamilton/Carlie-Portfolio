@@ -1,0 +1,55 @@
+
+// FOOTER
+#footer {
+    grid-area: footer;
+    @include main-positioning;
+}
+
+.social-media {
+    @include icons;
+    @include social-media;
+}
+
+
+#to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    @include space(4em 0, 0);
+
+    #top-chevron i{
+        font-size: 2.5em;
+        color: $box-color;
+        position: relative;
+        left: 8px;
+        top: 0px;
+        transition: all 0.3s ease;
+    }
+
+    #top-chevron {
+        border: 1px solid $box-color;
+        border-radius: 50%;
+        @include space (0, 0.3em);
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            border-color: $hot-pink;
+        }
+
+        &:hover i {
+
+            color: $hot-pink;
+            top: -4px;
+        }
+    }
+}
+
+small {
+    display: flex;
+    justify-content: center;
+    @include space();
+}

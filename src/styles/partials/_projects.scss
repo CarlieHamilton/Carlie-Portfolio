@@ -190,22 +190,3 @@
     }
 }
 
-@keyframes moveArrow {
-
-	0% {
-		transform: translateX(0px);
-	}
-
-	49% {
-		transform: translateX(50px);
-	}
-
-	50% {
-		transform: translateX(-50px);
-	}
-
-	100% {
-		transform: translateX(0px);
-	}
-
-}
