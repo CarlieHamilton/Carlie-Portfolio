@@ -1445,6 +1445,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   grid-area: more-projects;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 #more-projects a {
