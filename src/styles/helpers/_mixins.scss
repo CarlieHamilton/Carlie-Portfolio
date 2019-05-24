@@ -20,6 +20,10 @@
     @include space (0, 0 0 60px 0)
 }
 
+@mixin button-border {
+    border: 1px solid $box-color;
+}
+
 @mixin icons {
     display: flex;
     list-style: none;
@@ -28,13 +32,12 @@
     align-items: center;
     align-content: center;
     @include space;
+
     li {
         margin-right: 20px;
         line-height: 4em;
     }
-    li:hover {
-        color: $hot-pink;
-    }
+
     i {
     font-size: 3.5em;
 }
@@ -42,10 +45,11 @@
 
 @mixin social-media {
     max-width: 350px;
-    margin: 0 50px;
+    margin: 0 auto;
 
     a {
         color: $main-font-color;
+
         &:hover {
             color: $hot-pink;
         }
@@ -57,10 +61,6 @@
         @include biggest-screen {
             font-size: 3.5em;
         }
-    }
-
-    @include big-screen {
-        margin: 0 auto;
     }
 
     @include biggest-screen {
@@ -108,31 +108,4 @@
     background-color: $hot-pink;
     border: 1px solid $main-bg-color;
     color: $main-bg-color;
-}
-
-
-// for main nav big screen animation
-@mixin nav-animation-across {
-     &::before {
-            content: '';
-            position: absolute;
-            // left: 0;
-            // top: 0;
-            transform: scaleX(0);
-            transform-origin: 0 50%;
-            width: 100%;
-            height: 100%;
-            background-color: $secondary-bg-color;
-            z-index: -1;
-            transition: transform $transition-time;
-        }
-
-        &:hover {
-            background-color: none;
-
-                    &::before {
-        transform: scaleX(1);
-        }
-
-        }
 }

@@ -11,7 +11,6 @@ html {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000080', endColorstr='#000080',GradientType=1 );
 
     @include content-font;
-    scroll-behavior: smooth;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -73,9 +72,7 @@ a {
 .inline-link {
     a:hover {
         background-color: $main-font-color;
-
     }
-
 
     @include biggest-screen {
         a:hover {
@@ -106,12 +103,19 @@ em {
     font-style: normal;
     background-color: $hot-pink;
     color: $main-bg-color;
+    padding: 3px 2px;
+
+    @include biggest-screen {
+        color: $dark-font-color;
+    }
 }
 
 .box {
     @include space(1em);
     background-color: $secondary-bg-color;
     color: $dark-font-color;
+    @include content-font;
+
     @include big-screen {
         @include space (0, 4em);
     }

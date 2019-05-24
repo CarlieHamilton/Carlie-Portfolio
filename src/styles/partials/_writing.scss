@@ -5,7 +5,6 @@
     @include main-positioning;
     .box {
         background-color: $secondary-bg-color;
-        @include content-font;
 
         @include big-screen {
             position: relative;

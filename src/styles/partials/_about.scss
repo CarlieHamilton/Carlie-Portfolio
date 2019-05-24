@@ -6,20 +6,15 @@
     .box {
         background-color: $main-bg-color;
         max-width: 800px;
-        @include content-font;
+
         @include biggest-screen {
             @include big-screen-box;
-
-            em {
-                color: $main-bg-color;
-            }
         }
     }
 }
 
 .techstack {
     @include icons;
-
 }
 
 #about-head:hover .fa-terminal:before {

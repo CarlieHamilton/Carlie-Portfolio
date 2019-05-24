@@ -15,6 +15,7 @@
     font-size: 1.5em;
     @include space(0,0);
     justify-content: center;
+
     li {
         line-height: 1em;
         @include space(0 7px, 0)
@@ -29,7 +30,7 @@
 #about-button {
     @include content-font($box-color);
     display: inline-block;
-    border: 1px solid $box-color;
+    @include button-border;
     @include space;
     width: 200px;
     @include ease;

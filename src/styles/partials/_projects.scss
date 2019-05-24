@@ -4,8 +4,6 @@
     grid-area: projects;
     @include main-positioning;
     .box {
-        background-color: $secondary-bg-color;
-        @include content-font;
         @include space;
 
         @include big-screen {
@@ -13,8 +11,8 @@
         }
 
         @include biggest-screen {
+            @include space(0);
             @include big-screen-box;
-            @include space(0,)
         }
 
     }
@@ -183,11 +181,11 @@
 
 #more-projects-button {
 	position: relative;
-    border: 1px solid $box-color;
+    @include button-border;
     @include space;
+    @include ease;
 
     &:hover {
-        @include ease;
         @include button-hover;
     }
 }

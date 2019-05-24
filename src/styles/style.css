@@ -11,7 +11,6 @@ html {
   color: #F0F8FF;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5em;
-  scroll-behavior: smooth;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -112,6 +111,13 @@ em {
   font-style: normal;
   background-color: #FC5185;
   color: #000080;
+  padding: 3px 2px;
+}
+
+@media screen and (min-width: 1281px) {
+  em {
+    color: black;
+  }
 }
 
 .box {
@@ -119,6 +125,9 @@ em {
   padding: 0.5em;
   background-color: #0a319f;
   color: black;
+  color: #F0F8FF;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
 }
 
 @media screen and (min-width: 768px) and (min-height: 461px) {
@@ -216,16 +225,12 @@ em {
   margin: 0.5em;
   padding: 0.5em;
   max-width: 350px;
-  margin: 0 50px;
+  margin: 0 auto;
 }
 
 .social-media li {
   margin-right: 20px;
   line-height: 4em;
-}
-
-.social-media li:hover {
-  color: #FC5185;
 }
 
 .social-media i {
@@ -247,12 +252,6 @@ em {
 @media screen and (min-width: 1281px) {
   .social-media i {
     font-size: 3.5em;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-height: 461px) {
-  .social-media {
-    margin: 0 auto;
   }
 }
 
@@ -1081,7 +1080,6 @@ img {
 #nav .menu {
   text-align: center;
   width: 100px;
-  list-style: none;
   font-weight: bold;
   position: absolute;
   right: 0;
@@ -1183,8 +1181,6 @@ img {
 @media screen and (min-width: 768px) and (min-height: 461px) {
   #nav #menu-logo {
     display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
     color: #000080;
   }
 }
@@ -1211,9 +1207,6 @@ img {
 #about .box {
   background-color: #000080;
   max-width: 800px;
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
 }
 
 @media screen and (min-width: 1281px) {
@@ -1221,9 +1214,6 @@ img {
     background-color: #F0F8FF;
     color: black;
     max-width: 700px;
-  }
-  #about .box em {
-    color: #000080;
   }
 }
 
@@ -1251,10 +1241,6 @@ img {
   line-height: 4em;
 }
 
-.techstack li:hover {
-  color: #FC5185;
-}
-
 .techstack i {
   font-size: 3.5em;
 }
@@ -1275,10 +1261,6 @@ img {
 }
 
 #projects .box {
-  background-color: #0a319f;
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
   margin: 0.5em;
   padding: 0.5em;
 }
@@ -1292,11 +1274,11 @@ img {
 
 @media screen and (min-width: 1281px) {
   #projects .box {
+    margin: 0;
+    padding: 0.5em;
     background-color: #F0F8FF;
     color: black;
     max-width: 700px;
-    margin: 0;
-    padding: 0.5em;
   }
 }
 
@@ -1413,10 +1395,6 @@ img {
   line-height: 4em;
 }
 
-.project-links li:hover {
-  color: #FC5185;
-}
-
 .project-links i {
   font-size: 3.5em;
 }
@@ -1498,11 +1476,11 @@ img {
   border: 1px solid #3FC1C9;
   margin: 0.5em;
   padding: 0.5em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #more-projects-button:hover {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   background-color: #FC5185;
   border: 1px solid #000080;
   color: #000080;
@@ -1570,9 +1548,6 @@ img {
 
 #writing .box {
   background-color: #0a319f;
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
 }
 
 @media screen and (min-width: 768px) and (min-height: 461px) {

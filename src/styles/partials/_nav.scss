@@ -15,7 +15,6 @@
     @include big-screen {
         position: sticky;
         top: 0;
-        // border-bottom: 1px solid $main-font-color;
         background-color: $hot-pink;
         height: auto;
     }
@@ -40,10 +39,7 @@
     .menu {
         text-align: center;
         width: 100px;
-        // display: none;
-        list-style: none;
         font-weight: bold;
-
         position:absolute;
         right:0;
         top:0;
@@ -93,11 +89,8 @@
             position: relative;
             left: 0px;
             width: 100%;
-
-
             max-height:100px;
             transform:perspective(400) rotate3d(0,0,0,0);
-
         }
     }
 
@@ -121,12 +114,9 @@
         display: none;
         @include big-screen {
             display: inline-block;
-            font-size: 1em;
-            font-weight: bold;
             color: $main-bg-color;
         }
     }
-
 }
 
 .menu-icon:hover .fa-bars:before {
