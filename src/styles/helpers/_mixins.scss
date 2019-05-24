@@ -43,7 +43,7 @@
 @mixin social-media {
     max-width: 350px;
     margin: 0 50px;
-   
+
     a {
         color: $main-font-color;
         &:hover {
@@ -106,8 +106,8 @@
 
 @mixin button-hover {
     background-color: $hot-pink;
-    border: 1px solid $main-font-color;
-    color: $main-font-color;
+    border: 1px solid $main-bg-color;
+    color: $main-bg-color;
 }
 
 

@@ -111,6 +111,7 @@ ul {
 em {
   font-style: normal;
   background-color: #FC5185;
+  color: #000080;
 }
 
 .box {
@@ -1020,8 +1021,8 @@ img {
 
 #about-button:hover {
   background-color: #FC5185;
-  border: 1px solid #F0F8FF;
-  color: #F0F8FF;
+  border: 1px solid #000080;
+  color: #000080;
 }
 
 #about-button:hover .fa-angle-right:before {
@@ -1088,8 +1089,8 @@ img {
   z-index: 1;
   max-height: 0;
   overflow: hidden;
-  -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
-          transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: perspective(200) rotate3d(1, 0, 0, -90deg);
+          transform: perspective(200) rotate3d(1, 0, 0, -90deg);
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
   -webkit-transition: 350ms;
@@ -1111,10 +1112,10 @@ img {
 
 #nav .menu a {
   display: block;
-  border-bottom: 1px solid #F0F8FF;
+  border-bottom: 1px solid #000080;
   margin: 0px;
   background-color: #FC5185;
-  color: #F0F8FF;
+  color: #000080;
 }
 
 @media screen and (min-width: 768px) and (min-height: 461px) {
@@ -1131,6 +1132,7 @@ img {
     background-color: #0a319f;
     -webkit-box-shadow: 0px 0px 0px 5px #FFCCE6;
             box-shadow: 0px 0px 0px 5px #FFCCE6;
+    color: #F0F8FF;
   }
 }
 
@@ -1149,6 +1151,7 @@ img {
     width: 100%;
     max-height: 100px;
     -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+            transform: perspective(400) rotate3d(0, 0, 0, 0);
   }
 }
 
@@ -1166,6 +1169,7 @@ img {
   position: absolute;
   max-height: 1000px;
   -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+          transform: perspective(400) rotate3d(0, 0, 0, 0);
 }
 
 #nav .menu:focus {
@@ -1181,6 +1185,7 @@ img {
     display: inline-block;
     font-size: 1em;
     font-weight: bold;
+    color: #000080;
   }
 }
 
@@ -1218,7 +1223,7 @@ img {
     max-width: 700px;
   }
   #about .box em {
-    color: #F0F8FF;
+    color: #000080;
   }
 }
 
@@ -1499,8 +1504,8 @@ img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #FC5185;
-  border: 1px solid #F0F8FF;
-  color: #F0F8FF;
+  border: 1px solid #000080;
+  color: #000080;
 }
 
 #speaking {

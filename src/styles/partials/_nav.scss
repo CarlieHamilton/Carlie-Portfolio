@@ -50,13 +50,8 @@
         z-index:1;
         max-height:0;
         overflow:hidden;
-        transform: perspective(400) rotate3d(1,0,0, -90deg);
-        // -webkit-transform:perspective(-400) rotate3d(1,0,0, 60deg);
+        transform: perspective(200) rotate3d(1,0,0, -90deg);
         transform-origin: 50% 0;
-        // -webkit-transform-origin:50% 0;
-        -webkit-transition:350ms;
-        -moz-transition:350ms;
-        -o-transition:350ms;
         transition:350ms;
 
         #my-name {
@@ -72,10 +67,10 @@
 
         a {
         display: block;
-        border-bottom: 1px solid $main-font-color;
+        border-bottom: 1px solid $main-bg-color;
         margin: 0px;
         background-color: $hot-pink;
-        color: $main-font-color;
+        color: $main-bg-color;
 
         @include big-screen {
             border: none;
@@ -85,6 +80,7 @@
             &:hover {
                 background-color: $secondary-bg-color;
                 box-shadow: 0px 0px 0px 5px $light-hot-pink;
+                color: $main-font-color;
             }
         }
         }
@@ -100,7 +96,7 @@
 
 
             max-height:100px;
-            -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+            transform:perspective(400) rotate3d(0,0,0,0);
 
         }
     }
@@ -114,7 +110,7 @@
 
 
         max-height:1000px;
-        -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+        transform:perspective(400) rotate3d(0,0,0,0);
 
     }
     .menu:focus {
@@ -127,6 +123,7 @@
             display: inline-block;
             font-size: 1em;
             font-weight: bold;
+            color: $main-bg-color;
         }
     }
 
