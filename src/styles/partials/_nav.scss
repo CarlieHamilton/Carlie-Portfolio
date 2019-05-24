@@ -15,12 +15,14 @@
     @include big-screen {
         position: sticky;
         top: 0;
-        border-bottom: 1px solid $main-font-color;
+        // border-bottom: 1px solid $main-font-color;
         background-color: $hot-pink;
         height: auto;
     }
 
     label {
+        z-index: 2;
+        position: relative;
         display: block;
         cursor: pointer;
         color: $hot-pink;
@@ -42,18 +44,31 @@
         list-style: none;
         font-weight: bold;
 
-    position:absolute;
-    left:0;
-    // top:36px;
-    z-index:1;
-    max-height:0;
-    overflow:hidden;
-    -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
-    -webkit-transform-origin:50% 0;
-    -webkit-transition:350ms;
-    -moz-transition:350ms;
-    -o-transition:350ms;
-    transition:350ms;
+        position:absolute;
+        right:0;
+        top:0;
+        z-index:1;
+        max-height:0;
+        overflow:hidden;
+        transform: perspective(400) rotate3d(1,0,0, -90deg);
+        // -webkit-transform:perspective(-400) rotate3d(1,0,0, 60deg);
+        transform-origin: 50% 0;
+        // -webkit-transform-origin:50% 0;
+        -webkit-transition:350ms;
+        -moz-transition:350ms;
+        -o-transition:350ms;
+        transition:350ms;
+
+        #my-name {
+            background-color: $main-bg-color;
+            font-size: 1.5em;
+            z-index: -1;
+            position: relative;
+
+            @include big-screen {
+                display: none;
+            }
+        }
 
         a {
         display: block;
@@ -84,8 +99,8 @@
             width: 100%;
 
 
-                max-height:100px;
-    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+            max-height:100px;
+            -webkit-transform:perspective(400) rotate3d(0,0,0,0);
 
         }
     }
@@ -98,8 +113,8 @@
         position: absolute;
 
 
-            max-height:1000px;
-    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+        max-height:1000px;
+        -webkit-transform:perspective(400) rotate3d(0,0,0,0);
 
     }
     .menu:focus {

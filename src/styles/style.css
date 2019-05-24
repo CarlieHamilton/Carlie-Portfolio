@@ -1051,13 +1051,14 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #F0F8FF;
     background-color: #FC5185;
     height: auto;
   }
 }
 
 #nav label {
+  z-index: 2;
+  position: relative;
   display: block;
   cursor: pointer;
   color: #FC5185;
@@ -1082,14 +1083,30 @@ img {
   list-style: none;
   font-weight: bold;
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 0;
   z-index: 1;
   max-height: 0;
   overflow: hidden;
   -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+          transform: perspective(400) rotate3d(1, 0, 0, -90deg);
   -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
   -webkit-transition: 350ms;
   transition: 350ms;
+}
+
+#nav .menu #my-name {
+  background-color: #000080;
+  font-size: 1.5em;
+  z-index: -1;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) and (min-height: 461px) {
+  #nav .menu #my-name {
+    display: none;
+  }
 }
 
 #nav .menu a {
