@@ -96,6 +96,19 @@ For the purposes of assessment, the website has been deployed on [netlify](http:
 
 ### Design process
 
+- Brainstorm
+- Moodboard
+- Wireframes
+- Considered a Logo
+- Built the html according the the wireframes
+- Added SCSS to style. Experimented with different animations to try and make the website unique.
+- Tested and deployed as it was built. At the end, also tested on additional browsers.
+- Also asked for feedback at various stages from a variety of sources.
+- Tested for accessability.
+- Testing of links and final deployment (for now).
+
+### Initial Ideas
+
 My initial ideas for the website were:
 
 - One column design - desktop mode possibly having a sidebar navigation
@@ -151,6 +164,8 @@ I wanted a simple logo/image to put on the website that would represent being a 
 
 - I wanted the user to be able to access the navigation from any part of the website - I felt that as a one page website this was important. So I created a menu that is always at the top in both mobile and bigger screen versions.
 
+![Original blue - poor contrast](/docs/originalblue.png)
+
 - The colours of my website are very bold. This presented some problems with accessability. I originally had another blue colour on the website, but when testing it with my colours it provided little contrast. Instead, I decided to go for a darker blue (but still lighter than my main navy blue) as a contrasting background and the website was better for it.
 
 
@@ -181,6 +196,10 @@ I hope this is an improvement for people who have trouble viewing certain colour
 Some browsers display the menu already stuck to the top in desktop mode, it displays as fixed rather than sticky, but this does not affect the functionality of the site.
 
 ![iphone](/docs/phone1.png)
+
+- I made sure it performed well on Google's lighthouse audit
+
+![google lighthouse audit](/docs/audits.png)
 
 ## 🔍 Planning
 ### Project plan & timeline
