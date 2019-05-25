@@ -3,27 +3,10 @@
     background-color: $main-bg-color;
     grid-area: speaking;
     @include main-positioning;
+    @include content-list;
     .box {
         background-color: $main-bg-color;
-        @include content-font;
-
-        @include big-screen {
-            position: relative;
-            @include space(0,0);
-            left: -100px;
-        }
-
-        @include biggest-screen {
-            @include big-screen-box;
-            left: auto;
-        }
-    }
-
-    ul {
-        padding-inline-start: 0px;
-        i {
-            padding-right: 5px;
-        }
+        @include content-box;
     }
 }
 

@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Muli|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli|Open+Sans");
 html {
   scroll-behavior: smooth;
 }
@@ -1504,11 +1504,17 @@ img {
   padding: 0 0 60px 0;
 }
 
+#speaking ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+#speaking ul i {
+  padding-right: 5px;
+}
+
 #speaking .box {
   background-color: #000080;
-  color: #F0F8FF;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
 }
 
 @media screen and (min-width: 768px) and (min-height: 461px) {
@@ -1529,15 +1535,6 @@ img {
   }
 }
 
-#speaking ul {
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-}
-
-#speaking ul i {
-  padding-right: 5px;
-}
-
 .speaking-head:hover .fa-terminal:before {
   content: "\f27a";
 }
@@ -1551,6 +1548,15 @@ img {
   top: 0px;
   margin: 0;
   padding: 0 0 60px 0;
+}
+
+#writing ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+#writing ul i {
+  padding-right: 5px;
 }
 
 #writing .box {
@@ -1573,15 +1579,6 @@ img {
     max-width: 700px;
     left: auto;
   }
-}
-
-#writing ul {
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-}
-
-#writing ul i {
-  padding-right: 5px;
 }
 
 #writing h2 {
@@ -1651,6 +1648,8 @@ img {
 
 #email-form input[type=submit]:hover {
   background-color: #FC5185;
+  color: #000080;
+  border-color: #000080;
 }
 
 .form-label {

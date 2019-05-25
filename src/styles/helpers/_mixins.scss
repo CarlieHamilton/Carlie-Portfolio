@@ -20,10 +20,6 @@
     @include space (0, 0 0 60px 0)
 }
 
-@mixin button-border {
-    border: 1px solid $box-color;
-}
-
 @mixin icons {
     display: flex;
     list-style: none;
@@ -107,12 +103,26 @@
     }
 }
 
+// General styles for the box for the biggest screen size
 @mixin big-screen-box {
     background-color: $main-font-color;
     color: $dark-font-color;
     max-width: 700px;
 }
 
+// Styles for the box for general content (i.e. speaking, writing sections)
+@mixin content-box {
+       @include big-screen {
+            position: relative;
+            @include space(0,0);
+            left: -100px;
+        }
+
+        @include biggest-screen {
+            @include big-screen-box;
+            left: auto;
+        }
+}
 
 @mixin box-shadow {
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
@@ -128,4 +138,17 @@
     background-color: $hot-pink;
     border: 1px solid $main-bg-color;
     color: $main-bg-color;
+}
+
+@mixin button-border {
+    border: 1px solid $box-color;
+}
+
+@mixin content-list {
+    ul {
+        padding-inline-start: 0px;
+        i {
+            padding-right: 5px;
+        }
+    }
 }
