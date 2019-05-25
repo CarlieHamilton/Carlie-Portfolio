@@ -1,13 +1,53 @@
 # Carlie Hamilton's Portfolio
 
-- Deployed Website - [carlie.netlify.com](https://carliehamilton.netlify.com/)
+- Deployed Website - [carlie.netlify.com](https://carliehamilton.netlify.com/) or [carliehamilton.com](http://carliehamilton.com)
 - [Github Profile](https://github.com/BlueCodeThree/Carlie-Portfolio)
 
 ## ℹ️ About This Website
 
 ### Purpose
-### Functionality / features
+
+CarlieHamilton.com is my professional portfolio, designed to showcase:
+- My programming skills through linking personal and professional projects - with the aim of attracting employers
+- Record previous and upcoming speaking engagements and written articles - to increase my social proof, as well as to serve as a hub for people to access my writing and speaking records.
+- Information about me, and as a way for people to find how to contact me.
+
+
+### Functionality & Features
+
+This website was built as a one page website. It was designed with the mobile layout first.
+
+#### Navigation
+Mobile navigation is through a hamburger style menu - when you click on the three lined "hamburger" it changes to a symbol of a food hamburger, just for a bit of fun. When the menu opens it looks like it is coming from behind and folding down. I thought this was a little different from usual navigation animations. The menu is fixed to the top of the screen so that you do not have to scroll to access a different part of the site.
+
+The mobile and tablet layouts of the website are single column style, with the main difference being that the tablet view has the same menu as the desktop style.
+
+The desktop and table menu is missing from the header (splash page) of the site, but once you scroll down it becomes fixed to the top of the page - again so you do not have to scroll to access the different parts of the website.
+
+#### Header
+
+The header has a shaky button to go to the main section of the site. I wanted to do this to grab people's attention to hopefully want to see more of the website.
+
+#### About
+
+The about section is an introduction about me, and display my tech stack of technologies that I know and use. In the future as this tech stack grows I intend to divide it more into front and back end technologies. In the future I would also expand this section to include a work history, or perhaps create a new section.
+
+I highlighted some text to draw attention to 
+
+#### Terminal Icon
+
+![ CarlieHamilton.com Logo ]( docs/carlielogo.png )
+
+The terminal icon is used as a logo on the website. If you hover over these, they will change into another icon. This icon is also used as a favicon.
+
+
+
+I used semantic HTML to define each area and plain ol' divs for when I wanted to style something
+
 ### Sitemap
+
+The website is all on one page, and I have designed it so that the menu is always in view, so that you can navigate to where you want to go without having to scroll or swipe anywhere first.
+
 ### Screenshots
 ### Target audience
 ### Tech stack (e.g. html, css, deployment platform, etc)
