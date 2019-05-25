@@ -89,10 +89,14 @@ input, textarea {
     background-color: $main-bg-color;
     color: $main-font-color;
     border: $box-color 1px solid;
-    margin: 0.5em;
+    @include space(0.5em, 0.3em)
     &::placeholder {
         color: $main-font-color;
     }
+}
+
+textarea {
+    height: 100px;
 }
 
 i {
@@ -125,6 +129,7 @@ em {
     }
 }
 
+// This wrapper is for the header (& other spaces where I want to do something similar)
 .wrapper {
     display: inline-block;
     padding: 50% 0;

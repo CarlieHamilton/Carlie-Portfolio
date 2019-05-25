@@ -1,5 +1,5 @@
 // Shake animation from http://elrumordelaluz.github.io/csshake
-.shake-slow {
+.shake-slow, .shake-horizontal {
 	display: inherit;
 	transform-origin: center center;
 }
@@ -68,20 +68,6 @@
 }
 
 // HORIZONTAL SHAKE
-.shake-horizontal {
-  display: inherit;
-  transform-origin: center center; }
-
-.shake-freeze,
-.shake-constant.shake-constant--hover:hover,
-.shake-trigger:hover .shake-constant.shake-constant--hover {
-  animation-play-state: paused; }
-
-.shake-freeze:hover,
-.shake-trigger:hover .shake-freeze, .shake-horizontal:hover,
-.shake-trigger:hover .shake-horizontal {
-  animation-play-state: running; }
-
 @keyframes shake-horizontal {
   2% {
     transform: translate(-5px, 0) rotate(0); }
