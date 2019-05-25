@@ -10,8 +10,14 @@
         @include content-box;
     }
 
-    h2 {
+    h2, h3 {
         color: $light-hot-pink;
+    }
+
+    @include biggest-screen {
+        h3 {
+            color: $secondary-bg-color;
+        }
     }
 }
 

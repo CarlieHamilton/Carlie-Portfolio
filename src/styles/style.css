@@ -53,6 +53,13 @@ h3 {
   font-family: "Muli", sans-serif;
 }
 
+@media screen and (min-width: 1281px) {
+  h3 {
+    color: #000080;
+    font-family: "Muli", sans-serif;
+  }
+}
+
 a {
   color: #FFCCE6;
   text-decoration: none;
@@ -971,6 +978,10 @@ img {
   font-size: 1em;
 }
 
+#header h3 {
+  color: #FC5185;
+}
+
 .social-top {
   font-size: 1.5em;
   margin: 0;
@@ -1566,8 +1577,14 @@ img {
   }
 }
 
-#writing h2 {
+#writing h2, #writing h3 {
   color: #FFCCE6;
+}
+
+@media screen and (min-width: 1281px) {
+  #writing h3 {
+    color: #0a319f;
+  }
 }
 
 .writing-head:hover .fa-terminal:before {

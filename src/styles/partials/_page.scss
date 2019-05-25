@@ -55,6 +55,10 @@ h2 {
 
 h3 {
     @include header-font;
+
+    @include biggest-screen {
+        @include header-font($main-bg-color);
+    }
 }
 
 a {

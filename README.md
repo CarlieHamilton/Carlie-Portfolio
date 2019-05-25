@@ -191,7 +191,7 @@ I hope this is an improvement for people who have trouble viewing certain colour
 
 - Links and the contact form are accessible via using the keyboard only.
 
-- The website was tested OK in Chrome & Firefox (desktop), Chrome on a mobile phone, Silk browser on a tablet. It was also tested in Edge, Safari (mobile) and Windows Phone through an [emulator - browserstack.com](https://www.browserstack.com/).
+- The website was tested OK in Chrome & Firefox (desktop), Chrome on a mobile phone, Silk browser on a tablet. It was also tested in Edge, Safari (mobile & tablet) and Windows Phone through an [emulator - browserstack.com](https://www.browserstack.com/).
 
 Some browsers display the menu already stuck to the top in desktop mode, it displays as fixed rather than sticky, but this does not affect the functionality of the site.
 
