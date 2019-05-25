@@ -32,7 +32,28 @@ The header has a shaky button to go to the main section of the site. I wanted to
 
 The about section is an introduction about me, and display my tech stack of technologies that I know and use. In the future as this tech stack grows I intend to divide it more into front and back end technologies. In the future I would also expand this section to include a work history, or perhaps create a new section.
 
-I highlighted some text to draw attention to 
+I highlighted some of the text in order to break it up, make it more readable, and to highlight some important parts of the text.
+
+#### Projects
+
+The projects section features four of my latest projects, with an image (if possible, a fun gif to capture interest), a bit about the project, and a link to the github for the project. If the project had a way for the visitor to view it live (such as a website or app) - I would add a link to it here as well.
+
+The link to my github, at the bottom of this section, has a subtle side-to-side animation, to draw attention to it without it being too distracting.
+
+#### Speaking
+
+The speaking section of this website features links to past presentations, and to any future presentations.
+
+#### Writing
+
+Similar to the speaking section, the writing section will showcase selected writings.
+
+
+#### Contact and Footer
+
+The contact section has a working form that uses [UseBasin.com](https://usebasin.com/) to handle the back end.
+
+There are links to my social media, and a link back to the top of the page.
 
 #### Terminal Icon
 
@@ -40,17 +61,34 @@ I highlighted some text to draw attention to
 
 The terminal icon is used as a logo on the website. If you hover over these, they will change into another icon. This icon is also used as a favicon.
 
+#### Shhhhhh...
 
-
-I used semantic HTML to define each area and plain ol' divs for when I wanted to style something
+There may be a secret message for you if you use dev tools or look at the source code... It's not very exciting 😄
 
 ### Sitemap
 
 The website is all on one page, and I have designed it so that the menu is always in view, so that you can navigate to where you want to go without having to scroll or swipe anywhere first.
 
+The main sections are:
+
+- Home (header)
+- About
+- Projects
+- Speaking
+- Writing
+- Contact (and footer section)
+
 ### Screenshots
 ### Target audience
+- Possible employers
+- Fellow peers
+- Meetup, conference and event organisers
+
 ### Tech stack (e.g. html, css, deployment platform, etc)
+
+The website was designed with html, scss and javascript.
+
+For the purposes of assessment, the website has been deployed on [netlify](http://carlie.netlify.com), but it's permanent home at the moment is on SiteGround at [CarlieHamilton.com](http://carliehamilton.com)
 
 ## 🖌 Design
 
@@ -59,7 +97,6 @@ The website is all on one page, and I have designed it so that the menu is alway
 My initial ideas for the website were:
 
 - One column design - desktop mode possibly having a sidebar navigation
-- [Parallax image](https://alligator.io/css/pure-css-parallax/) at the top of the site (below navigation)
 - One page design for the most part, but with a link to show more projects (all projects to be on a separate page).
 - Navy blue background, with hot pink highlights/accents on the page.
 - The overall website having a professional feel but also unique and stand out with the colour pallet.
@@ -72,7 +109,7 @@ I also really like the idea of incorporating a game on the page like on [Rafael 
 
 ![Rafael Caferati](docs/caferati.png)
 
-On his page he has some kind of craft/robot that can shoot things to destroy the page. I know it is an extra extra stretch goal, but I would love to try to convert my ruby snake game to javascript and have that eat my main page. This is a super stretch goal to implement in the future.
+On his page he has some kind of space craft/robot that can shoot things to destroy the page. I know it is an extra extra stretch goal, but I would love to try to convert my ruby snake game to javascript and have that eat my main page. This is a super stretch goal to implement in the future.
 
 #### Mood Board
 
@@ -86,9 +123,9 @@ I wanted sans serif fonts for easy readability on the screen. I wanted a mono sp
 
 ### Wireframes
 
-(Click to enlarge)
-
-![wireframes](/docs/wireframe.jpeg)
+![wireframes](/docs/wireframe01.png)
+![wireframes](/docs/wireframe2.jpeg)
+![wireframes](/docs/wireframes3.png)
 
 In my wireframes I have created a layout for mobile as well as a larger version for desktop and tablet. I have an almost one page design with a separate page to expand on my portfolio items.
 
