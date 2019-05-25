@@ -86,7 +86,7 @@ The main sections are:
 
 ### Tech stack (e.g. html, css, deployment platform, etc)
 
-The website was designed with html, scss and javascript.
+The website was designed with html, scss (using flexbox and grid), and javascript.
 
 For the purposes of assessment, the website has been deployed on [netlify](http://carlie.netlify.com), but it's permanent home at the moment is on SiteGround at [CarlieHamilton.com](http://carliehamilton.com)
 
@@ -119,15 +119,25 @@ I chose navy blue because it is my favourite colour and hot pink because that is
 
 Because pink is a really bright colour, I thought it would be better in small doses. I added a green colour incase I needed it, and an offwhite colour as well.
 
-I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text.
+I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text. As I implemented the page, I didn't think the Oxygen font looked quite right, so instead replaced it with "Muli". The mono-space font ended up not being needed.
 
 ### Wireframes
+
+Original Wire Frames:
 
 ![wireframes](/docs/wireframe01.png)
 ![wireframes](/docs/wireframe2.jpeg)
 ![wireframes](/docs/wireframes3.png)
 
-In my wireframes I have created a layout for mobile as well as a larger version for desktop and tablet. I have an almost one page design with a separate page to expand on my portfolio items.
+In my wireframes I have created a layout for mobile as well as a larger version for desktop and tablet. Originally I had an almost one page design with a separate page to expand on my portfolio items.
+
+As the page was designed, the social media icons were removed from the top navigation (of the desktop version), and instead were placed in the header section.
+
+Originally, the projects section was to be a preview that then expanded into a page of their own. I decided it would be more cohesive to keep them on the one page. I also planned to have each project be displayed in a box horizontally with the image to the left and the information to the right (in desktop view). When designing, however, I felt like there was too much white space. So, instead, I kept the projects laid out vertically, like on the mobile version, and instead divided them in to two columns.
+
+![updated wireframe](/docs/wireframe4.jpeg)
+
+Another change from the wireframes was the originally I was to have explicit boxes around my content. As the website was being built it became clear that the explicit boxes looked off, and instead the content boxes are the same background as the rest of their section.
 
 ### Logo
 
