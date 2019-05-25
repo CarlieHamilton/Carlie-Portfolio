@@ -48,6 +48,11 @@ h2 {
   }
 }
 
+h3 {
+  color: #FC5185;
+  font-family: "Muli", sans-serif;
+}
+
 a {
   color: #FFCCE6;
   text-decoration: none;
@@ -1015,7 +1020,6 @@ img {
 
 #about-button a {
   color: #3FC1C9;
-  text-decoration: none;
 }
 
 #about-button:hover {
@@ -1038,6 +1042,8 @@ img {
   position: fixed;
   width: 100%;
   z-index: 1;
+  color: #FC5185;
+  font-family: "Muli", sans-serif;
 }
 
 @media screen and (max-height: 460px) {
@@ -1053,6 +1059,7 @@ img {
     top: 0;
     background-color: #FC5185;
     height: auto;
+    line-height: 50px;
   }
 }
 
@@ -1293,17 +1300,17 @@ img {
   font-family: "Muli", sans-serif;
 }
 
-#projects h3 i:hover {
+#projects h3 i {
   color: #FFCCE6;
 }
 
 @media screen and (min-width: 1281px) {
   #projects h3 {
-    color: #FC5185;
+    color: #000080;
     font-family: "Muli", sans-serif;
   }
-  #projects h3 i:hover {
-    color: #0a319f;
+  #projects h3 i {
+    color: #FC5185;
   }
 }
 
@@ -1399,17 +1406,17 @@ img {
   font-size: 3.5em;
 }
 
-.project-links ul {
-  margin: 0;
-  padding: 0;
-}
-
 .project-links a {
   color: #F0F8FF;
 }
 
 .project-links a:hover {
   color: #FFCCE6;
+}
+
+.project-links ul {
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 1281px) {

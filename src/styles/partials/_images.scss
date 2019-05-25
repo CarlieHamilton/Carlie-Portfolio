@@ -2,12 +2,14 @@ img {
     max-width: 100%;
 }
 
+// illustration img tags
 .images {
     @include space(0, 0);
     max-width: auto;
     @include box-shadow;
 }
 
+// wrapper around the .images
 .img-wrapper {
     @include space;
     @include big-screen {
@@ -20,8 +22,10 @@ img {
     }
 }
 
+// wrapper around images I want full screen in mobile mode.
 .image-wrapper-full {
     @include space(0, 0);
+    
     @include big-screen {
         img {
             max-width: 700px;

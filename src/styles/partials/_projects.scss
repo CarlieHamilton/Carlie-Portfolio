@@ -24,15 +24,14 @@
         font-size: 2em;
         line-height: 1.3em;
         @include header-font($main-font-color);
-        i:hover {
+        i {
             color: $light-hot-pink;
         }
 
         @include biggest-screen {
-            @include header-font;
-
-            i:hover {
-                color: $secondary-bg-color;
+            @include header-font($main-bg-color);
+            i {
+                color: $hot-pink;
             }
         }
     }
@@ -80,27 +79,18 @@
 
 
         @include box-shadow;
-
-        a {
-            color: $secondary-bg-color;
-        }
-
-        a:hover {
-            color: $hot-pink;
-        }
+        @include dark-link;
 
 
         img {
             max-height: 500px;
         }
-
     }
 }
 
 .project-deets {
     @include big-screen {
         max-width: 670px;
-
     }
 }
 
@@ -108,27 +98,14 @@
     @include icons;
     max-width: 700px;
     margin: 0 auto;
+    @include light-link;
 
     ul {
         @include space(0,0);
     }
 
-    a {
-        color: $main-font-color;
-
-        &:hover {
-            color: $light-hot-pink;
-        }
-    }
-
     @include biggest-screen {
-        a {
-            color: $secondary-bg-color;
-
-            &:hover {
-                color: $hot-pink;
-            }
-        }
+        @include dark-link;
     }
 }
 
@@ -165,7 +142,7 @@
 }
 
 #more-projects {
-    	display: flex;
+    display: flex;
 	align-items: center;
     justify-content: center;
     grid-area: more-projects;

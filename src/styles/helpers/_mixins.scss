@@ -87,6 +87,26 @@
     }
 }
 
+@mixin dark-link {
+    a {
+        color: $secondary-bg-color;
+    }
+
+    a:hover {
+        color: $hot-pink;
+    }
+}
+
+@mixin light-link {
+    a {
+        color: $main-font-color;
+
+        &:hover {
+            color: $light-hot-pink;
+        }
+    }
+}
+
 @mixin big-screen-box {
     background-color: $main-font-color;
     color: $dark-font-color;

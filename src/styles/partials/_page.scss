@@ -53,6 +53,10 @@ h2 {
     }
 }
 
+h3 {
+    @include header-font;
+}
+
 a {
     color: $light-hot-pink;
     text-decoration: none;
