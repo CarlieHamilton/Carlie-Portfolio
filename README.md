@@ -22,7 +22,9 @@ Mobile navigation is through a hamburger style menu - when you click on the thre
 
 The mobile and tablet layouts of the website are single column style, with the main difference being that the tablet view has the same menu as the desktop style.
 
-The desktop and table menu is missing from the header (splash page) of the site, but once you scroll down it becomes fixed to the top of the page - again so you do not have to scroll to access the different parts of the website.
+The desktop and table menu is missing from the header (splash page) of the site, but once you scroll down it becomes fixed (sticky) to the top of the page - again so you do not have to scroll to access the different parts of the website.
+
+The website also has smooth scrolling when it navigates between sections.
 
 #### Header
 
@@ -141,11 +143,44 @@ Another change from the wireframes was the originally I was to have explicit box
 
 ### Logo
 
-I wanted a simple logo/image to put on the website that would represent being a developer, and allow the page to have a common element that I could also use as a favicon. I found this by [freepik on flaticon.com:](https://www.freepik.com/?__hstc=57440181.cb32c4642b4100318fd2c153520c6b27.1557789566265.1557789566265.1557789566265.1&__hssc=57440181.1.1557789566266&__hsfp=4071572874)
+I wanted a simple logo/image to put on the website that would represent being a developer, and allow the page to have a common element that I could also use as a favicon. I decided to use a terminal prompt for my logo.
 
-![icon](/docs/icon.png)
+![icon](/docs/carlielogo.png)
 
 ### Usability considerations
+
+- I wanted the user to be able to access the navigation from any part of the website - I felt that as a one page website this was important. So I created a menu that is always at the top in both mobile and bigger screen versions.
+
+- The colours of my website are very bold. This presented some problems with accessability. I originally had another blue colour on the website, but when testing it with my colours it provided little contrast. Instead, I decided to go for a darker blue (but still lighter than my main navy blue) as a contrasting background and the website was better for it.
+
+
+![Colour Contrast](/docs/contrast2.png)
+![Colour Contrast](/docs/contrast3.png)
+![Colour Contrast](/docs/contrast4.png)
+![Colour Contrast](/docs/contrast5.png)
+
+The next issue I had with colour contrast was my main menu, and my highlighted text, where I was using my main pink colour and off white text. They did not pass at all. As I considered what to do, I continued to design my website, and when I asked for feedback it was confirmed that it was hard to read for some people.
+
+![Colour Contrast](/docs/contrast1.png)
+
+I was reluctant to get rid of the bright pink colour because I felt like it tied the site together well, and was happy to discover it not only looked good with my dark navy colour as text, it also passed all but WCAG AAA rating for normal text.
+
+![Colour Contrast](/docs/contrast6.png)
+![Bad Menu](/docs/menu1.png)
+![Good Menu](/docs/menu2.png)
+
+
+I hope this is an improvement for people who have trouble viewing certain colours. In the future, I will design a black and white portfolio!
+
+- I have included alt tags and title tags throughout my website with the aim to make it more accessible to those who use screen readers.
+
+- Links and the contact form are accessible via using the keyboard only.
+
+- The website was tested OK in Chrome & Firefox (desktop), Chrome on a mobile phone, Silk browser on a tablet. It was also tested in Edge, Safari (mobile) and Windows Phone through an [emulator - browserstack.com](https://www.browserstack.com/).
+
+Some browsers display the menu already stuck to the top in desktop mode, it displays as fixed rather than sticky, but this does not affect the functionality of the site.
+
+![iphone](/docs/phone1.png)
 
 ## 🔍 Planning
 ### Project plan & timeline
