@@ -59,7 +59,7 @@ The contact section has a working form that uses [UseBasin.com](https://usebasin
 
 There are links to my social media, and a link back to the top of the page.
 
-#### ▶️ Terminal Icon
+#### Terminal Icon
 
 ![ CarlieHamilton.com Logo ]( docs/carlielogo.png )
 
@@ -129,7 +129,7 @@ For the purposes of assessment, the website has been deployed on [netlify](http:
 - Considered a Logo
 - Built the html according the the wireframes
 - Added SCSS to style. Experimented with different animations to try and make the website unique.
-- Tested and deployed as it was built. At the end, also tested on additional browsers.
+- Tested and deployed as it was built.
 - Also asked for feedback at various stages from a variety of sources.
 - Tested for accessability.
 - Testing of links and final deployment (for now).
@@ -161,7 +161,7 @@ I chose navy blue because it is my favourite colour and hot pink because that is
 
 Because pink is a really bright colour, I thought it would be better in small doses. I added a green colour incase I needed it, and an offwhite colour as well.
 
-I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text. As I implemented the page, I didn't think the Oxygen font looked quite right, so instead replaced it with "Muli". The mono-space font ended up not being needed.
+I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text. As I implemented the page, I didn't think the Oxygen font looked quite right, so instead replaced it with "Merriweather Sans". The mono-space font ended up not being needed.
 
 ### Wireframes
 
@@ -183,7 +183,7 @@ Another change from the wireframes was the originally I was to have explicit box
 
 ### Logo
 
-I wanted a simple logo/image to put on the website that would represent being a developer, and allow the page to have a common element that I could also use as a favicon. I decided to use a terminal prompt for my logo.
+I wanted a simple logo/image to put on the website that would represent being a developer, and allow the page to have a common element that I could also use as a favicon. I wanted a logo that expressed "coder" over designer, that didn't suggest 'html' or only websites. I decided to use a terminal prompt for my logo.
 
 ![icon](/docs/carlielogo.png)
 
@@ -235,7 +235,7 @@ Some browsers display the menu already stuck to the top in desktop mode, it disp
 
 - mood boarding and wire frame brain storming, trello board setup
 
-#### Day One - Tuesday, 14 May 2019
+#### Tuesday, 14 May 2019
 
 ![Trello Day 1](/docs/trello14may.png)
 
@@ -247,7 +247,7 @@ End of day trello board:
 
 ![trello end of day 1](/docs/trello14mayend.png)
 
-#### Day Two - Wednesday 15 May 2019
+#### Wednesday 15 May 2019
 
 On day two I finished the most of the mobile layout, added a css animation to my main button, and made the main navigation work in desktop/tablet mode.
 
@@ -271,6 +271,20 @@ I finalised my layout for the contact section of the website.
 I attempted to add some css animations to my main navigation menu, but had troubles. If I added a transition to the menu in mobile mode, I couldn't "reset" it for the desktop mode. And when I tried to add a transition to my menu in tablet/desktop mode, I couldn't style it.
 
 ![trello  end of day Tuesday](/docs/trello21may.png)
+
+#### Friday 24 May 2019
+
+My animation problems have been solved - as usual, it seems so easy once it has been worked out 😄
+
+#### Saturday 25 May 2019
+
+I have asked for user feedback, and have made some changes based on that. Cleaning up the HTML and SCSS - as much as possible, the cascading nature of CSS makes it hard in some cases. Feeling sorry for teachers having to go through it all 😅
+
+![trello end of day Saturday](/docs/trello26may.png)
+
+#### Sunday 26 May 2019
+
+Finishing up last bits of documentation and stop fiddling with my website to get it submitted. 
 
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
