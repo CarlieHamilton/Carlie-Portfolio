@@ -17,7 +17,7 @@ CarlieHamilton.com is my professional portfolio, designed to showcase:
 
 This website was built as a one page website. It was designed with the mobile layout first.
 
-#### Navigation
+#### 🍔 Navigation
 Mobile navigation is through a hamburger style menu - when you click on the three lined "hamburger" it changes to a symbol of a food hamburger, just for a bit of fun. When the menu opens it looks like it is coming from behind and folding down. I thought this was a little different from usual navigation animations. The menu is fixed to the top of the screen so that you do not have to scroll to access a different part of the site.
 
 The mobile and tablet layouts of the website are single column style, with the main difference being that the tablet view has the same menu as the desktop style.
@@ -28,11 +28,11 @@ The website also has smooth scrolling when it navigates between sections.
 
 #### Header
 
-The header has a shaky button to go to the main section of the site. I wanted to do this to grab people's attention to hopefully want to see more of the website.
+The header has a shaky button to go to the main section of the site. I wanted to do this to grab people's attention to hopefully want to see more of the website. I used an animation that pauses so that your eyes can rest when looking at it.
 
 #### About
 
-The about section is an introduction about me, and display my tech stack of technologies that I know and use. In the future as this tech stack grows I intend to divide it more into front and back end technologies. In the future I would also expand this section to include a work history, or perhaps create a new section.
+The about section is an introduction about me, and displays my tech stack of technologies that I know and use. In the future as this tech stack grows I intend to divide it more into front and back end technologies. In the future I would also expand this section to include a work history, or perhaps create a new section.
 
 I highlighted some of the text in order to break it up, make it more readable, and to highlight some important parts of the text.
 
@@ -57,7 +57,7 @@ The contact section has a working form that uses [UseBasin.com](https://usebasin
 
 There are links to my social media, and a link back to the top of the page.
 
-#### Terminal Icon
+#### ▶️ Terminal Icon
 
 ![ CarlieHamilton.com Logo ]( docs/carlielogo.png )
 
@@ -67,9 +67,11 @@ The terminal icon is used as a logo on the website. If you hover over these, the
 
 There may be a secret message for you if you use dev tools or look at the source code... It's not very exciting 😄
 
+---
+
 ### Sitemap
 
-The website is all on one page, and I have designed it so that the menu is always in view, so that you can navigate to where you want to go without having to scroll or swipe anywhere first.
+This is a one-page website, and I have designed it so that the menu is always in view, so that you can navigate to where you want to go without having to scroll or swipe anywhere first.
 
 The main sections are:
 
@@ -81,6 +83,18 @@ The main sections are:
 - Contact (and footer section)
 
 ### Screenshots
+
+#### Mobile
+
+![Home/Header screen](/docs/screenshot_mob_01.png)
+![Navigation](/docs/screenshot_mob_02.png)
+![About](/docs/screenshot_mob_03.png)
+![Projects](/docs/screenshot_mob_04.png)
+![Speaking](/docs/screenshot_mob_05.png)
+![Writing](/docs/screenshot_mob_06.png)
+![Contact](/docs/screenshot_mob_07.png)
+
+
 ### Target audience
 - Possible employers
 - Fellow peers
