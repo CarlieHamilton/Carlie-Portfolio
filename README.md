@@ -20,6 +20,8 @@ This website was built as a one page website. It was designed with the mobile la
 #### 🍔 Navigation
 Mobile navigation is through a hamburger style menu - when you click on the three lined "hamburger" it changes to a symbol of a food hamburger, just for a bit of fun. When the menu opens it looks like it is coming from behind and folding down. I thought this was a little different from usual navigation animations. The menu is fixed to the top of the screen so that you do not have to scroll to access a different part of the site.
 
+There is settings for a "wide screen" version of the navigation - for when mobile devices are turned on it's side. The menu is not as high, so that it fits on the screen.
+
 The mobile and tablet layouts of the website are single column style, with the main difference being that the tablet view has the same menu as the desktop style.
 
 The desktop and table menu is missing from the header (splash page) of the site, but once you scroll down it becomes fixed (sticky) to the top of the page - again so you do not have to scroll to access the different parts of the website.
@@ -84,7 +86,7 @@ The main sections are:
 
 ### Screenshots
 
-#### Mobile
+#### Mobile Screenshots
 
 ![Home/Header screen](/docs/screenshot_mob_01.png)
 ![Navigation](/docs/screenshot_mob_02.png)
@@ -94,6 +96,17 @@ The main sections are:
 ![Writing](/docs/screenshot_mob_06.png)
 ![Contact](/docs/screenshot_mob_07.png)
 
+#### Tablet Screenshots
+The tablet version of the website is similar to the mobile layout, except that it's navigation is the same as the desktop version.
+
+![Tablet screenshot](/docs/tablet_01.png)
+
+#### Desktop Screenshots
+
+
+![Desktop Screenshot](/docs/desktop_01.png)
+![Projects screenshot](/docs/desktop_02.png)
+![Speaking screenshot](/docs/desktop_03.png)
 
 ### Target audience
 - Possible employers
