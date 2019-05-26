@@ -296,13 +296,21 @@ Finishing up last bits of documentation and stop fiddling with my website to get
 
 1983 - TCP/IP protocols were used in ARPANET - marking the start of the modern internet
 Late 1980s - ISP companies were formed
+
 1989 -  Tim Berners-Lee was credited for inventing the World Wide Web, the first web server in 1990, and a web browser.
+
 1993 -  Marc Andreessen's 'Mosaic' browser, later called Netscape, was credited for sparking the internet boom of the 1990s - used a combination of text and images.
+
 1995 - Estimated 16 million internet users
+
 1997 - HTML 4
+
 1998 - ICANN established
+
 2004 - Web2.0 propelled the internet into a social system - that emphasize user generated content
+
 2010 - Internet used from space
+
 2014 - Mobile internet use exceeds desktop use in the United States
 
 ### Define and describe the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
