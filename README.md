@@ -3,6 +3,8 @@
 - Deployed Website - [carlie.netlify.com](https://carliehamilton.netlify.com/) or [carliehamilton.com](http://carliehamilton.com)
 - [Github Profile](https://github.com/BlueCodeThree/Carlie-Portfolio)
 
+![CarlieHamilton.com](/docs/main_screen.png)
+
 ## ℹ️ About This Website
 
 ### Purpose
@@ -67,7 +69,7 @@ The terminal icon is used as a logo on the website. If you hover over these, the
 
 #### Shhhhhh...
 
-There may be a secret message for you if you use dev tools or look at the source code... It's not very exciting 😄
+There may be a secret message for you if you use dev tools or look at the source code... It's not very exciting 😆
 
 ---
 
@@ -161,7 +163,9 @@ I chose navy blue because it is my favourite colour and hot pink because that is
 
 Because pink is a really bright colour, I thought it would be better in small doses. I added a green colour incase I needed it, and an offwhite colour as well.
 
-I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text. As I implemented the page, I didn't think the Oxygen font looked quite right, so instead replaced it with "Merriweather Sans". The mono-space font ended up not being needed.
+I wanted sans serif fonts for easy readability on the screen. I wanted a mono space font for special highlighting, maybe for image captions. I chose two other sans serif fonts for headers and general text.
+
+As I implemented the page, I didn't think the Oxygen font looked quite right, so instead replaced it with "Merriweather Sans". Merriweather is also wider and bolder than Oxygen, so it has the benefit of standing out more. The mono-space font ended up not being needed.
 
 ### Wireframes
 
@@ -205,7 +209,7 @@ The next issue I had with colour contrast was my main menu, and my highlighted t
 
 ![Colour Contrast](/docs/contrast1.png)
 
-I was reluctant to get rid of the bright pink colour because I felt like it tied the site together well, and was happy to discover it not only looked good with my dark navy colour as text, it also passed all but WCAG AAA rating for normal text.
+I was reluctant to get rid of the bright pink colour because I felt like it tied the site together well, and was happy to discover it not only looked good with my dark navy colour as text, it also passed all but WCAG AAA rating for normal text. I made sure that my menus are bold and large (using my header font) so that it is OK for everyone to view.
 
 ![Colour Contrast](/docs/contrast6.png)
 ![Bad Menu](/docs/menu1.png)
@@ -284,7 +288,7 @@ I have asked for user feedback, and have made some changes based on that. Cleani
 
 #### Sunday 26 May 2019
 
-Finishing up last bits of documentation and stop fiddling with my website to get it submitted. 
+Finishing up last bits of documentation and stop fiddling with my website to get it submitted.
 
 ## 🕸 Short Answer Q&A
  - Include short answers to the following questions,
